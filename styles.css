@@ -27,3 +27,37 @@ footer {
 @media (max-width: 560px) {
   .section { padding-top: 48px; padding-bottom: 48px; }
 }
+
+
+/* v3.3 targeted install/support correction */
+html { scroll-padding-top: 110px; }
+#install {
+  scroll-margin-top: 110px;
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding: 38px 42px;
+}
+#install .eyebrow { margin-bottom: 12px; }
+#install h2 { margin-bottom: 12px; }
+#install p { margin: 0; max-width: 650px; }
+#support {
+  scroll-margin-top: 110px;
+  padding: 58px 5vw 48px;
+  margin: 0 auto;
+  min-height: 0;
+}
+#support h2 { margin-bottom: 14px; }
+#support p { margin: 0 auto; max-width: 760px; }
+footer { margin-top: 0; padding-top: 24px; padding-bottom: 24px; }
+@media (max-width: 900px) {
+  html { scroll-padding-top: 90px; }
+  #install, #support { scroll-margin-top: 90px; }
+  #install { margin-top: 16px; padding: 34px 5vw; }
+  #support { padding-top: 48px; padding-bottom: 42px; }
+}
+@media (max-width: 560px) {
+  html { scroll-padding-top: 78px; }
+  #install, #support { scroll-margin-top: 78px; }
+  #install { margin: 12px 14px 0; padding: 30px 24px; }
+  #support { padding: 42px 22px 38px; }
+}

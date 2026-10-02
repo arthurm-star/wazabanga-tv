@@ -23,3 +23,10 @@
   - Added sticky-header-safe anchor offsets.
   - Reduced footer dead space.
   - Preserved hero design, APK, version manifest and download infrastructure.
+
+
+## Website v3.3
+- Updated public download presentation to Wazabanga TV v1.0.29.
+- Corrected sticky-header fragment positioning for Install and Support.
+- Compacted Install, Support, and footer spacing without changing Hero, Features, or EPG.
+- Preserved production version.json for v1.0.29 / versionCode 31.
