@@ -1,8 +1,8 @@
 {
   "app": "Wazabanga TV",
   "package": "live.wazabanga.tv",
-  "versionName": "1.0.31",
-  "versionCode": 33,
-  "apk": "downloads/Wazabanga-TV-v1.0.31.apk",
-  "sha256": "9e2ca92752ba0df2c7660aed9918659cbd57d67af8958c2a59ec0e0c0727ee03"
+  "versionName": "1.0.32",
+  "versionCode": 34,
+  "apk": "downloads/Wazabanga-TV-v1.0.32.apk",
+  "sha256": "ed3a596b6354a4b8d7f90112a5d5cc5fe5fe824ca7d564d700224dda178d5679"
 }
