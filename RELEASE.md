@@ -6,3 +6,7 @@
 - Current Android TV stable release: v1.0.27.
 
 - Updated website header with the new Wazabanga primary brand logo.
+
+- Website v3: rebuilt from the approved Wazabanga visual blueprint as responsive HTML/CSS.
+- Preserved Android TV v1.0.27 APK and version manifest.
+- Reserved the hero secondary CTA for future intro-video integration.

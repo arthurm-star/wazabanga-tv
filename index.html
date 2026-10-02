@@ -3,88 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#07101d">
-  <title>Wazabanga TV — Your TV. Your Sources. One Beautiful Experience.</title>
-  <meta name="description" content="Wazabanga TV brings your playlists, live channels and programme guides together in a fast, TV-first interface for Android TV.">
+  <meta name="theme-color" content="#050914">
+  <title>Wazabanga TV — Your TV. Your Sources.</title>
+  <meta name="description" content="Bring your playlists, live channels and programme guides together in a fast, elegant Android TV experience.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header class="nav">
-  <a class="brand" href="#top"><img src="assets/wazabanga-logo.png" alt="Wazabanga — Global TV for Everyone" class="brand-logo"></a>
-  <nav>
-    <a href="#features">Features</a><a href="#epg">TV Guide</a><a href="#install">Install</a>
-    <a href="#support">Support</a>
-  </nav>
-  <a class="button small" href="#download">Download</a>
-</header>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Wazabanga home">
+      <img src="assets/wazabanga-logo.png" alt="Wazabanga" class="brand-logo">
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#epg">EPG</a>
+      <a href="#install">Install</a>
+      <a href="#support">Support</a>
+    </nav>
+    <a class="header-download" href="downloads/Wazabanga-TV-v1.0.27.apk">Download</a>
+  </header>
 
-<main id="top">
-<section class="hero">
-  <div class="eyebrow">WAZABANGA TV · ANDROID TV</div>
-  <h1>Your TV. Your Sources.<br><span>One Beautiful Experience.</span></h1>
-  <p class="lead">Bring your playlists, live channels and programme guides together in a fast, elegant experience designed for the big screen.</p>
-  <div class="actions">
-    <a class="button" href="#download">Download for Android TV</a>
-    <a class="ghost" href="#features">Explore features</a>
-  </div>
-  <div class="release">Current stable release · v1.0.27</div>
-  <div class="brand-visual hero-screen"><img src="assets/wazabanga-brand-hero.png" alt="Wazabanga Global TV for Everyone"></div>
-</section>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">WAZABANGA TV • ANDROID TV</div>
+        <h1>Your TV. Your Sources.<br><span>One Beautiful Experience.</span></h1>
+        <p>Bring your playlists, live channels and programme guides together in a fast, elegant experience designed for the big screen.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="downloads/Wazabanga-TV-v1.0.27.apk">Download for Android TV <b>↓</b></a>
+          <a class="btn secondary" href="#experience">See Wazabanga in action <b>▶</b></a>
+        </div>
+        <div class="release">Current release <strong>v1.0.27</strong> <span>•</span> TV-first navigation <span>•</span> NOW/NEXT EPG</div>
+      </div>
+      <div class="hero-visual">
+        <div class="glow"></div>
+        <img src="assets/wazabanga-brand-hero.png" alt="Wazabanga Global TV for Everyone">
+      </div>
+    </section>
 
-<section id="features" class="section">
-  <div class="eyebrow">BUILT FOR THE BIG SCREEN</div>
-  <h2>Everything you need. Nothing you don't.</h2>
-  <div class="grid">
-    <article><b>Live TV</b><p>Browse channels with a clean remote-first interface and instant preview.</p></article>
-    <article><b>Movies & Series</b><p>Organize compatible playlist categories into a simple TV experience.</p></article>
-    <article><b>Kids, Sports, Music & News</b><p>Jump directly into the categories you actually watch.</p></article>
-    <article><b>Your Sources</b><p>Add and manage compatible playlists while keeping control of your own sources.</p></article>
-  </div>
-</section>
+    <section class="categories" aria-label="Wazabanga categories">
+      <div>▣ <span>LIVE TV</span></div>
+      <div>▶ <span>MOVIES</span></div>
+      <div>▤ <span>SERIES</span></div>
+      <div>★ <span>KIDS</span></div>
+      <div>● <span>SPORTS</span></div>
+      <div>♫ <span>MUSIC</span></div>
+      <div>▧ <span>NEWS</span></div>
+    </section>
 
-<section id="epg" class="section guide-section">
-  <div class="eyebrow">SMART PROGRAMME GUIDE</div>
-  <h2>Know what’s on now—and what’s next.</h2>
-  <p>Wazabanga resolves compatible XMLTV programme data and presents current programme information and upcoming schedules directly in the TV experience.</p>
-  <div class="chips"><span>NOW / NEXT</span><span>XMLTV</span><span>Persistent EPG cache</span><span>Remote-first</span></div>
-</section>
+    <section class="section intro" id="experience">
+      <div>
+        <div class="eyebrow">BUILT FOR THE BIG SCREEN</div>
+        <h2>Everything you need. Nothing in the way.</h2>
+        <p>Wazabanga keeps your sources, channels and programme information in one clean TV interface. Use your remote, move quickly between categories and see what is playing now and next.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-top">
+          <span>WAZABANGA</span><span class="live-dot">● LIVE</span>
+        </div>
+        <div class="product-screen">
+          <div class="rail">Search<br>Live TV<br>Movies<br>Series<br>Kids<br>Sports<br>Music<br>News</div>
+          <div class="guide">
+            <small>NOW PLAYING</small>
+            <h3>Programme information at a glance</h3>
+            <p>Current programme • time range • description</p>
+            <div class="next">NEXT&nbsp;&nbsp; Upcoming programme and start time</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="download" class="section download">
-  <div>
-    <div class="eyebrow">WAZABANGA TV v1.0.27</div>
-    <h2>Ready for your television.</h2>
-    <p>Built for Android TV with D-pad navigation, live preview, playlist management and programme-guide support.</p>
-  </div>
-  <div class="download-card">
-    <strong>Android TV</strong>
-    <span>Stable release · v1.0.27</span>
-    <a class="button" href="downloads/Wazabanga-TV-v1.0.27.apk" download>Download Wazabanga TV</a>
-    <small>Android TV · v1.0.27 · 3.9 MB</small>
-  </div>
-</section>
+    <section class="section feature-grid" id="features">
+      <article><b>01</b><h3>Your playlists</h3><p>Add compatible sources and keep them organized in one place.</p></article>
+      <article><b>02</b><h3>Live programme guide</h3><p>Automatic XMLTV matching with current and next programme information.</p></article>
+      <article><b>03</b><h3>TV-first controls</h3><p>Designed around D-pad navigation, previews and fast movement across categories.</p></article>
+      <article><b>04</b><h3>Your experience</h3><p>Wazabanga is a player and source manager. You decide what authorized sources to add.</p></article>
+    </section>
 
-<section id="install" class="section">
-  <div class="eyebrow">GET STARTED</div><h2>Simple setup.</h2>
-  <div class="steps">
-    <article><span>01</span><b>Install</b><p>Install the Wazabanga TV APK on a compatible Android TV device.</p></article>
-    <article><span>02</span><b>Add your source</b><p>Add a compatible playlist or source you are authorized to use.</p></article>
-    <article><span>03</span><b>Watch</b><p>Browse categories, preview channels and enjoy available programme-guide data.</p></article>
-  </div>
-</section>
+    <section class="section epg" id="epg">
+      <div class="epg-copy">
+        <div class="eyebrow">NOW / NEXT</div>
+        <h2>Know what’s on before you press play.</h2>
+        <p>Wazabanga resolves programme guide information and presents the current programme, time range, description and what comes next without cluttering the viewing experience.</p>
+      </div>
+      <div class="epg-demo">
+        <div class="epg-channel">LIVE CHANNEL</div>
+        <div class="epg-now"><small>NOW</small><strong>Current Programme</strong><span>6:00 PM — 7:00 PM</span></div>
+        <div class="epg-next"><small>NEXT</small><strong>Upcoming Programme</strong><span>7:00 PM</span></div>
+      </div>
+    </section>
 
-<section id="support" class="section faq">
-  <div class="eyebrow">SUPPORT & FAQ</div><h2>A player that keeps you in control.</h2>
-  <details><summary>Does Wazabanga provide TV channels?</summary><p>No. Wazabanga is a media player and source manager. It does not host or provide television channels or copyrighted programming.</p></details>
-  <details><summary>Does Wazabanga support programme guides?</summary><p>Yes. Compatible XMLTV programme data can provide current programme, schedule, description and next-programme information.</p></details>
-  <details><summary>What devices is this release for?</summary><p>The current product is focused on Android TV and remote-first use.</p></details>
-  <details><summary>Can I add my own playlist?</summary><p>Yes. Only add sources and streams you are authorized to access.</p></details>
-</section>
-</main>
+    <section class="section install" id="install">
+      <div>
+        <div class="eyebrow">CURRENT RELEASE • v1.0.27</div>
+        <h2>Put Wazabanga on your Android TV.</h2>
+        <p>Download the current release directly. Your playlists and sources remain yours.</p>
+      </div>
+      <a class="btn primary large" href="downloads/Wazabanga-TV-v1.0.27.apk">Download Wazabanga TV v1.0.27 ↓</a>
+    </section>
 
-<footer>
-  <div class="brand"><span class="mark">W</span><span>WAZABANGA</span></div>
-  <p>Wazabanga is a media player/source manager. Content, schedules and regional availability are controlled by their respective sources and publishers.</p>
-  <div>© 2026 Wazabanga · Privacy · Terms · Support</div>
-</footer>
+    <section class="section support" id="support">
+      <h2>Simple by design.</h2>
+      <p>Wazabanga does not provide or host television channels or copyrighted programming. Add only streams, playlists and sources you are authorized to use.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Wazabanga™</strong> <span>GLOBAL TV FOR EVERYONE</span></div>
+    <div>WATCH • DISCOVER • BELONG</div>
+  </footer>
 </body>
 </html>
