@@ -1,15 +1,8 @@
 {
   "app": "Wazabanga TV",
   "package": "live.wazabanga.tv",
-  "versionName": "1.0.27",
-  "versionCode": 29,
-  "apk": "downloads/Wazabanga-TV-v1.0.27.apk",
-  "sha256": "5b3c2b724c1d0b4340fda6ba2b05bf2ebba80e4b934b58ae1c4ddf6708c4c88d",
-  "sizeBytes": 4050540,
-  "releaseNotes": [
-    "Stable Android TV baseline",
-    "Persistent EPG mapping cache",
-    "NOW/NEXT programme information",
-    "TV-first navigation and live preview"
-  ]
+  "versionName": "1.0.29",
+  "versionCode": 31,
+  "apk": "downloads/Wazabanga-TV-v1.0.29.apk",
+  "sha256": "1527f7b2f440839535777f000af9787e4cfe1da1311849e5982e5a3641eb8f36"
 }
