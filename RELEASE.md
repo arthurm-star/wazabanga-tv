@@ -16,3 +16,10 @@
   - Brightened “One Beautiful Experience.” gradient.
   - Reduced excess hero top spacing.
   - Increased hero artwork prominence.
+
+- Website v3.2 layout-density pass:
+  - Reduced excessive vertical spacing between product sections.
+  - Tightened feature cards, EPG, install and support composition.
+  - Added sticky-header-safe anchor offsets.
+  - Reduced footer dead space.
+  - Preserved hero design, APK, version manifest and download infrastructure.
