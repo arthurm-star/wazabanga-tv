@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050914"><title>Connect to Wazabanga TV</title>
+<style>
+:root{--bg:#050914;--panel:#0b1729;--text:#f7f9ff;--muted:#a8b4ca;--cyan:#23d6ff;--blue:#2584ff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 75% 10%,#102950,#07101f 35%,var(--bg) 65%);color:var(--text);font-family:Inter,system-ui,sans-serif}
+main{max-width:680px;margin:auto;padding:56px 22px}.brand{font-weight:900;font-size:20px;margin-bottom:50px}.brand span{color:var(--cyan)}
+.card{background:rgba(11,23,41,.92);border:1px solid rgba(35,214,255,.18);border-radius:22px;padding:30px;box-shadow:0 30px 90px rgba(0,0,0,.35)}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#7fdcff;font-weight:900}.card h1{font-size:42px;letter-spacing:-.04em;margin:12px 0}.lead{color:var(--muted);line-height:1.6}
+label{display:block;font-size:13px;font-weight:800;margin:20px 0 8px}input{width:100%;padding:15px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:#050d19;color:white;font-size:16px;outline:none}input:focus{border-color:var(--cyan)}
+button{width:100%;margin-top:24px;padding:15px;border:0;border-radius:10px;background:linear-gradient(90deg,#0ebeff,#2877ff);color:white;font-weight:900;font-size:16px;cursor:pointer}
+#status{margin-top:16px;color:#a8b4ca;line-height:1.5}.small{font-size:12px;color:#71819b;margin-top:20px}
+</style></head><body><main><div class="brand">Wazabanga <span>TV</span></div><section class="card"><div class="eyebrow">PHONE SETUP</div><h1>Add a playlist</h1><p class="lead">Enter the pairing code shown on your TV, then paste a compatible playlist URL you are authorized to use.</p>
+<form id="f"><label for="code">Pairing code</label><input id="code" inputmode="numeric" autocomplete="one-time-code" maxlength="7" placeholder="123 456" required>
+<label for="name">Playlist name</label><input id="name" maxlength="80" placeholder="My Playlist">
+<label for="url">M3U / M3U8 URL</label><input id="url" type="url" inputmode="url" placeholder="https://example.com/playlist.m3u" required>
+<button id="send" type="submit">Send to TV</button><div id="status"></div></form>
+<p class="small">Wazabanga uses the pairing session only to transfer this playlist to the TV you paired. Pairing sessions expire automatically.</p></section></main>
+<script>
+const qs=new URLSearchParams(location.search), code=document.getElementById('code');if(qs.get('code'))code.value=qs.get('code').replace(/\D/g,'').replace(/(\d{3})(\d{3})/,'$1 $2');
+document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();const b=document.getElementById('send'),st=document.getElementById('status');b.disabled=true;st.textContent='Sending to your TV…';
+try{const r=await fetch('/api/pair',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'submit',code:code.value.replace(/\D/g,''),name:document.getElementById('name').value.trim()||'My Playlist',url:document.getElementById('url').value.trim()})});const j=await r.json();if(!r.ok)throw new Error(j.error||'Could not send playlist');st.textContent='✓ Playlist sent. You can return to your TV.';b.textContent='Sent ✓'}catch(x){st.textContent=x.message;b.disabled=false}});
+</script></body></html>
