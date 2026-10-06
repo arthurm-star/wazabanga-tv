@@ -228,7 +228,7 @@ function validateCountryStation(station, countryCode) {
       /\bcbs\s*news\b/,
       /\btalkradio\b/,
       /\btalksport\b/,
-      /\b80['â€™]?s\s+90['â€™]?s\s+old\s+music\s+radio\b/,
+      /\b80['\u2019]?s\s+90['\u2019]?s\s+old\s+music\s+radio\b/,
       /\bold\s+school\s+music\b/,
       /\bsmooth\s+country\b/,
       /\bdw\s+news\b/,
@@ -341,7 +341,7 @@ function countryFlag(countryCode) {
       .toLowerCase();
 
   if (!/^[a-z]{2}$/.test(code)) {
-    return "ðŸŒ";
+    return "\u{1F310}";
   }
 
   return `
@@ -357,7 +357,7 @@ function countryFlag(countryCode) {
       "
       onerror="
         this.style.display='none';
-        this.parentElement.textContent='ðŸŒ';
+        this.parentElement.textContent='\u{1F310}';
       "
     >
   `;
@@ -1847,16 +1847,16 @@ pushHistory = true
         ? WAZABANGA_ASIA_STATIONS[countryCode]
         : [];
     const WAZABANGA_QA_REJECTED_STATIONS = new Set([
-  // Grenada â€” failed real browser playback QA on 2026-10-04.
+  // Grenada -- failed real browser playback QA on 2026-10-04.
   "a347aba6-4247-4b97-bc4f-ba90c3d1c380",
-  // Cuba â€” failed real browser playback QA on 2026-10-05.
+  // Cuba -- failed real browser playback QA on 2026-10-05.
   "fe653321-02bc-47ed-9102-f50e1abc5479",
   "b6154a79-7eca-476c-ab74-1d96b5d4c456",
-  // Ethiopia â€” Bisrat FM failed real browser playback QA on 2026-10-05.
+  // Ethiopia -- Bisrat FM failed real browser playback QA on 2026-10-05.
   "22dd8fd6-ee1a-445b-af52-18dc574cff2d",
-  // Rwanda â€” non-station Abdulbasit/mp3islam entry rejected during browser QA.
+  // Rwanda -- non-station Abdulbasit/mp3islam entry rejected during browser QA.
   "b50082c6-87c0-4e84-be74-c1b817be0a4f",
-  // South Sudan â€” non-station Abdulbasit/mp3islam entry rejected during browser QA.
+  // South Sudan -- non-station Abdulbasit/mp3islam entry rejected during browser QA.
   "3629fd24-5c49-43b3-b125-06217bee9510"
 ]);
 
