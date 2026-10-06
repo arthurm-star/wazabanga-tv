@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 
 const API_SERVERS = [
   "https://de1.api.radio-browser.info",
@@ -1846,6 +1846,16 @@ pushHistory = true
       )
         ? WAZABANGA_ASIA_STATIONS[countryCode]
         : [];
+    const europeStations =
+      (
+        typeof WAZABANGA_EUROPE_STATIONS !== "undefined" &&
+        Array.isArray(WAZABANGA_EUROPE_STATIONS[countryCode])
+      )
+        ? WAZABANGA_EUROPE_STATIONS[countryCode].map(station => ({
+            ...station,
+            countrycode: countryCode
+          }))
+        : [];
     const WAZABANGA_QA_REJECTED_STATIONS = new Set([
   // Grenada -- failed real browser playback QA on 2026-10-04.
   "a347aba6-4247-4b97-bc4f-ba90c3d1c380",
@@ -1871,7 +1881,7 @@ let stations = [
   ...verifiedStations,
   ...caribbeanStations,
   ...eastAfricaStations,
-  ...africaStations, ...asiaStations,
+  ...africaStations, ...asiaStations, ...europeStations,
   ...directoryStations
 ];
 

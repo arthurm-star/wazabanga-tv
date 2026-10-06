@@ -1,0 +1,69 @@
+﻿WAZABANGA RADIO v1.5 — EUROPE MILESTONE
+=======================================
+
+STATUS
+------
+EUROPE PLAYBACK AUDIT: PASS
+EUROPE CANDIDATE QUALITY GATE: PASS
+EUROPE RUNTIME CATALOGUE: PASS
+EUROPE INTEGRATED RUNTIME GATE: PASS
+LOCAL BROWSER QA: PASS
+EUROPE FLAG FALLBACK QA: PASS
+
+EUROPE POPULATION
+-----------------
+Countries: 17
+Discovered stations: 5593
+Verified usable stations: 5382
+Excluded stations: 211
+Usable rate: 96.23%
+
+PLAYBACK COMPOSITION
+--------------------
+PLAYING: 5363
+PLAYING_AFTER_RETRY: 14
+PLAYING_WITH_HEADERS: 5
+
+VERIFIED COUNTRY COUNTS
+-----------------------
+AT 187
+BE 223
+CH 223
+DE 566
+DK 78
+ES 611
+FI 93
+FR 504
+GB 488
+GR 522
+IE 132
+IT 465
+NL 521
+NO 96
+PL 346
+PT 188
+SE 139
+
+BROWSER-TESTED WORKING FILES
+----------------------------
+85BB17BEFD6BEC18F1C707047E9E948A4B15408D91C78BE523164F38D8928433  radio/index.html
+5ACD5084D8770064FC4809980FBB980E049B8F779F6EE68163E6CF42AF46D735  radio/radio.js
+C1BE89FD172E86F8410B6FBAE8CC330D54909E6313BA9B604EF0BC8DC4F0C18D  radio/europe-catalogue.js
+
+FROZEN SNAPSHOTS
+----------------
+85BB17BEFD6BEC18F1C707047E9E948A4B15408D91C78BE523164F38D8928433  radio/index-v1.5-europe-milestone-browser-qa-passed.html
+5ACD5084D8770064FC4809980FBB980E049B8F779F6EE68163E6CF42AF46D735  radio/radio-v1.5-europe-milestone-browser-qa-passed.js
+C1BE89FD172E86F8410B6FBAE8CC330D54909E6313BA9B604EF0BC8DC4F0C18D  radio/europe-catalogue-v1.5-europe-milestone-browser-qa-passed.js
+
+NOTES
+-----
+Europe hierarchy remains:
+World -> Europe -> Country -> Stations/Stream
+
+Station artwork fallback:
+station favicon/logo -> country flag -> generic globe only when country cannot be resolved.
+
+Europe catalogue contains only HTTPS streams.
+Duplicate station UUIDs: 0
+Duplicate stream URLs: 0
