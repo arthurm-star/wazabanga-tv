@@ -1,0 +1,1273 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="/radio/assets/wazabanga-logo-transparent-v1.png">
+  <link rel="apple-touch-icon" href="/radio/assets/wazabanga-logo-transparent-v1.png">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050914">
+
+  <title>Wazabanga Radio - Listen to the World</title>
+  <meta name="description" content="Discover live radio from the Caribbean, Africa and around the world with Wazabanga Radio.">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    .radio-page {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 34px 150px;
+    }
+
+    /* HERO */
+
+    .radio-hero {
+      min-height: 360px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: center;
+      gap: 45px;
+      padding: 48px 0 34px;
+    }
+
+    .radio-hero h1 {
+      margin: 10px 0 14px;
+      font-size: clamp(46px,6vw,76px);
+      line-height: .96;
+      letter-spacing: -.045em;
+    }
+
+    .radio-hero h1 span {
+      color: rgba(255,255,255,.48);
+    }
+
+    .radio-hero p {
+      max-width: 680px;
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.66);
+    }
+
+    .radio-search {
+      max-width: 700px;
+      margin-top: 25px;
+      padding: 6px;
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 17px;
+      background: rgba(255,255,255,.035);
+    }
+
+    .radio-search input {
+      flex: 1;
+      min-width: 0;
+      padding: 12px 15px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: white;
+      font: inherit;
+      font-size: 14px;
+    }
+
+    .radio-search input::placeholder {
+      color: rgba(255,255,255,.40);
+    }
+
+    .radio-search button {
+      min-width: 100px;
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 12px;
+      background: white;
+      color: #050914;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    /* RADIO VISUAL */
+
+    .radio-visual {
+      position: relative;
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .radio-visual::before {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      background: rgba(33,108,255,.13);
+      filter: blur(55px);
+    }
+
+    .broadcast {
+      position: relative;
+      width: 330px;
+      height: 220px;
+      display: grid;
+      place-items: center;
+    }
+
+    .broadcast-ring {
+      position: absolute;
+      border: 1px solid rgba(69,197,255,.17);
+      border-radius: 50%;
+    }
+
+    .ring-one {
+      width: 150px;
+      height: 150px;
+    }
+
+    .ring-two {
+      width: 220px;
+      height: 220px;
+      opacity: .72;
+    }
+
+    .ring-three {
+      width: 290px;
+      height: 290px;
+      opacity: .38;
+    }
+
+    /* HERO WORLD GLOBE */
+
+    .hero-world-globe {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 210px;
+      height: 210px;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: .94;
+      filter:
+        drop-shadow(0 0 15px rgba(69,197,255,.16))
+        drop-shadow(0 0 34px rgba(33,108,255,.10));
+      object-fit: cover;
+      background: #020812;
+    }
+
+    /* GLOBE INTELLIGENCE PHASE 3B - DYNAMIC SIGNAL STATE */
+
+    .globe-activity-point[data-active="false"] {
+      opacity: .16;
+    }
+
+    .globe-activity-point[data-active="true"] {
+      width: 7px;
+      height: 7px;
+      opacity: 1;
+      background: rgba(110,229,255,1);
+      box-shadow:
+        0 0 6px rgba(110,229,255,1),
+        0 0 15px rgba(83,216,255,.88),
+        0 0 28px rgba(83,216,255,.42);
+      animation-duration: 2s;
+    }
+
+    .globe-activity-point[data-active="true"]::after {
+      width: 22px;
+      height: 22px;
+      border-color: rgba(110,229,255,.55);
+      animation-duration: 2s;
+    }
+
+    .globe-activity-point[data-broadcasting="true"] {
+      width: 9px;
+      height: 9px;
+      opacity: 1;
+      box-shadow:
+        0 0 8px rgba(145,238,255,1),
+        0 0 20px rgba(83,216,255,1),
+        0 0 38px rgba(83,216,255,.72);
+      animation-duration: .95s;
+    }
+
+    .globe-activity-point[data-broadcasting="true"]::after {
+      width: 30px;
+      height: 30px;
+      border-color: rgba(145,238,255,.72);
+      animation-duration: .95s;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-world-globe {
+        opacity: .88;
+      }
+    }
+
+    .radio-logo-orb {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 3;
+      width: 176px;
+      height: auto;
+      transform: translate(-50%,-50%);
+      display: block;
+      pointer-events: none;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    .radio-logo-orb img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,.42));
+    }
+
+    .wave {
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      z-index: 4;
+      width: 190px;
+      height: 42px;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      pointer-events: none;
+      filter: drop-shadow(0 0 9px rgba(69,197,255,.40));
+    }
+
+    .wave i {
+      display: block;
+      width: 4px;
+      border-radius: 8px;
+      background: rgba(74,200,255,.70);
+      box-shadow: 0 0 9px rgba(69,197,255,.55);
+    }
+
+    .wave i:nth-child(1) { height: 9px; }
+    .wave i:nth-child(2) { height: 18px; }
+    .wave i:nth-child(3) { height: 30px; }
+    .wave i:nth-child(4) { height: 20px; }
+    .wave i:nth-child(5) { height: 35px; }
+    .wave i:nth-child(6) { height: 16px; }
+    .wave i:nth-child(7) { height: 27px; }
+    .wave i:nth-child(8) { height: 12px; }
+    .wave i:nth-child(9) { height: 23px; }
+    .wave i:nth-child(10) { height: 8px; }
+
+    /* SECTIONS */
+
+    .radio-section {
+      margin-top: 38px;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 17px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 27px;
+      letter-spacing: -.02em;
+    }
+
+    .section-heading p {
+      margin: 5px 0 0;
+      color: rgba(255,255,255,.47);
+      font-size: 13px;
+    }
+
+    .section-link {
+      color: rgba(255,255,255,.62);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    /* RADIO LIBRARY */
+
+    .radio-library-tabs {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 18px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .radio-library-tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .radio-library-tab {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 999px;
+      background: rgba(255,255,255,.035);
+      color: rgba(255,255,255,.66);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition:
+        background .18s ease,
+        border-color .18s ease,
+        color .18s ease;
+    }
+
+    .radio-library-tab:hover {
+      color: #fff;
+      border-color: rgba(255,255,255,.20);
+      background: rgba(255,255,255,.07);
+    }
+
+    .radio-library-tab.active {
+      color: #fff;
+      border-color: rgba(255,255,255,.25);
+      background: rgba(255,255,255,.11);
+    }
+
+    .radio-library-tab span {
+      min-width: 18px;
+      height: 18px;
+      padding: 0 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(255,255,255,.10);
+      font-size: 10px;
+    }
+    /* LIVE NOW */
+
+    .live-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 13px;
+    }
+
+    .live-card {
+      position: relative;
+      min-width: 0;
+      padding: 17px;
+      border: 1px solid rgba(255,255,255,.085);
+      border-radius: 20px;
+      background:
+        linear-gradient(145deg,
+          rgba(255,255,255,.055),
+          rgba(255,255,255,.018));
+      transition: .2s ease;
+    }
+
+    .live-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(67,195,255,.28);
+      background: rgba(255,255,255,.06);
+    }
+
+    .live-top {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .station-art {
+      width: 58px;
+      height: 58px;
+      flex: 0 0 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: rgba(255,255,255,.075);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .07em;
+    }
+
+    .live-info {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .live-info strong {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 15px;
+    }
+
+    .live-info span {
+      display: block;
+      margin-top: 5px;
+      color: rgba(255,255,255,.47);
+      font-size: 12px;
+    }
+
+    .live-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 17px;
+      color: rgba(255,255,255,.46);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #46d6ff;
+      box-shadow: 0 0 12px rgba(70,214,255,.8);
+    }
+
+    .card-play {
+      position: absolute;
+      right: 15px;
+      bottom: 13px;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      background: white;
+      color: #050914;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    /* REGIONS */
+
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 12px;
+    }
+
+    .region-card {
+      position: relative;
+      min-height: 116px;
+      padding: 19px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.075);
+      border-radius: 18px;
+      background: rgba(255,255,255,.028);
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .region-card:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.055);
+      border-color: rgba(255,255,255,.15);
+    }
+
+    .region-number {
+      display: block;
+      margin-bottom: 21px;
+      color: #48c9ff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .12em;
+    }
+
+    .region-card strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    .region-card small {
+      color: rgba(255,255,255,.43);
+      line-height: 1.45;
+    }
+
+    /* GENRES */
+
+    .genre-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .genre {
+      padding: 11px 17px;
+      border: 1px solid rgba(255,255,255,.085);
+      border-radius: 999px;
+      background: rgba(255,255,255,.025);
+      color: rgba(255,255,255,.75);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+
+    .genre:hover {
+      color: white;
+      border-color: rgba(70,202,255,.35);
+      background: rgba(70,202,255,.08);
+    }
+
+    /* PLAYER */
+
+    .radio-player {
+      position: fixed;
+      z-index: 100;
+      left: 50%;
+      bottom: 14px;
+      transform: translateX(-50%);
+      width: min(760px,calc(100% - 28px));
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 19px;
+      background: rgba(5,9,20,.95);
+      backdrop-filter: blur(24px);
+      box-shadow: 0 20px 60px rgba(0,0,0,.58);
+    }
+
+    .player-art {
+      width: 46px;
+      height: 46px;
+      flex: 0 0 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: rgba(255,255,255,.075);
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .player-copy {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .player-copy strong {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+    }
+
+    .player-copy span {
+      display: block;
+      margin-top: 3px;
+      color: rgba(255,255,255,.43);
+      font-size: 11px;
+    }
+
+    .player-fav {
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .player-play {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      border: 0;
+      border-radius: 50%;
+      background: white;
+      color: #050914;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    @media(max-width:1050px) {
+      .live-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .region-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:850px) {
+      .radio-hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .radio-visual {
+        display: none;
+      }
+    }
+
+    @media(max-width:620px) {
+      .radio-page {
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+
+      .radio-hero {
+        padding: 36px 0 18px;
+      }
+
+      .radio-hero h1 {
+        font-size: 46px;
+      }
+
+      .radio-hero p {
+        font-size: 15px;
+      }
+
+      .live-grid,
+      .region-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .radio-search button {
+        min-width: auto;
+        padding: 12px 15px;
+      }
+
+      .section-heading {
+        align-items: start;
+      }
+    }
+  
+    /* GLOBE INTELLIGENCE PHASE 3A */
+
+    .globe-activity-layer {
+      position: absolute;
+      left: 50%;
+      top: 44%;
+      z-index: 2;
+      width: 254px;
+      height: 254px;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .globe-activity-point {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(83,216,255,.95);
+      box-shadow:
+        0 0 5px rgba(83,216,255,.95),
+        0 0 11px rgba(83,216,255,.58);
+      opacity: .38;
+      animation:
+        wazabanga-globe-pulse
+        2.8s
+        ease-in-out
+        infinite;
+    }
+
+    .globe-activity-point::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 15px;
+      height: 15px;
+      transform: translate(-50%,-50%);
+      border: 1px solid rgba(83,216,255,.28);
+      border-radius: 50%;
+      animation:
+        wazabanga-globe-ripple
+        2.8s
+        ease-out
+        infinite;
+    }
+
+    .globe-activity-point.point-1 {
+      left: 14%;
+      top: 27%;
+      animation-delay: -.3s;
+    }
+
+    .globe-activity-point.point-2 {
+      left: 31%;
+      top: 8%;
+      animation-delay: -1.2s;
+    }
+
+    .globe-activity-point.point-3 {
+      right: 25%;
+      top: 10%;
+      animation-delay: -2s;
+    }
+
+    .globe-activity-point.point-4 {
+      right: 7%;
+      top: 36%;
+      animation-delay: -.8s;
+    }
+
+    .globe-activity-point.point-5 {
+      right: 13%;
+      bottom: 20%;
+      animation-delay: -1.7s;
+    }
+
+    .globe-activity-point.point-6 {
+      left: 48%;
+      bottom: 2%;
+      animation-delay: -2.4s;
+    }
+
+    .globe-activity-point.point-7 {
+      left: 10%;
+      bottom: 25%;
+      animation-delay: -1.1s;
+    }
+
+    .globe-activity-point.point-8 {
+      left: 2%;
+      top: 49%;
+      animation-delay: -2.2s;
+    }
+
+    @keyframes wazabanga-globe-pulse {
+      0%, 100% {
+        opacity: .24;
+        transform: scale(.82);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes wazabanga-globe-ripple {
+      0% {
+        opacity: .48;
+        transform:
+          translate(-50%,-50%)
+          scale(.35);
+      }
+
+      75%, 100% {
+        opacity: 0;
+        transform:
+          translate(-50%,-50%)
+          scale(1.5);
+      }
+    }
+
+    /* GLOBE INTELLIGENCE PHASE 3B - DYNAMIC SIGNAL STATE */
+
+    .globe-activity-point[data-active="false"] {
+      opacity: .16;
+    }
+
+    .globe-activity-point[data-active="true"] {
+      width: 7px;
+      height: 7px;
+      opacity: 1;
+      background: rgba(110,229,255,1);
+      box-shadow:
+        0 0 6px rgba(110,229,255,1),
+        0 0 15px rgba(83,216,255,.88),
+        0 0 28px rgba(83,216,255,.42);
+      animation-duration: 2s;
+    }
+
+    .globe-activity-point[data-active="true"]::after {
+      width: 22px;
+      height: 22px;
+      border-color: rgba(110,229,255,.55);
+      animation-duration: 2s;
+    }
+
+    .globe-activity-point[data-broadcasting="true"] {
+      width: 9px;
+      height: 9px;
+      opacity: 1;
+      box-shadow:
+        0 0 8px rgba(145,238,255,1),
+        0 0 20px rgba(83,216,255,1),
+        0 0 38px rgba(83,216,255,.72);
+      animation-duration: .95s;
+    }
+
+    .globe-activity-point[data-broadcasting="true"]::after {
+      width: 30px;
+      height: 30px;
+      border-color: rgba(145,238,255,.72);
+      animation-duration: .95s;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .globe-activity-point,
+      .globe-activity-point::after {
+        animation: none;
+      }
+
+      .globe-activity-point {
+        opacity: .58;
+      }
+    }
+
+    /* HERO COMPOSITION PHASE 3.1 */
+
+    .broadcast {
+      height: 260px;
+    }
+
+    .hero-world-globe {
+      top: 44%;
+      width: 220px;
+      height: 220px;
+    }
+
+    .radio-logo-orb {
+      top: 51%;
+      width: 176px;
+    }
+
+    .wave {
+      bottom: 0;
+      width: 190px;
+      height: 38px;
+    }
+</style>
+</head>
+
+<body id="top">
+
+<header class="site-header">
+
+  <a class="brand" href="/" aria-label="Wazabanga home">
+    <img
+      src="/radio/assets/wazabanga-logo-transparent-v1.png"
+      alt="Wazabanga"
+      class="brand-logo">
+  </a>
+
+  <nav class="nav" aria-label="Primary">
+    <a href="/">TV</a>
+    <a href="/radio/">Radio</a>
+    <a href="/download/">Download</a>
+    <a href="/support/">Support</a>
+  </nav>
+
+  <a class="header-download" href="/download/">
+    Download
+  </a>
+
+</header>
+
+
+<main class="radio-page">
+
+  <section class="radio-hero">
+
+    <div class="radio-hero-copy">
+
+      <div class="eyebrow">
+        WAZABANGA RADIO
+      </div>
+
+      <h1>
+        Listen to<br>
+        <span>the world.</span>
+      </h1>
+
+      <p>
+        Live radio from the Caribbean, Africa and around the globe.
+        Discover music, news, culture and conversation without borders.
+      </p>
+
+      <div class="radio-search">
+
+        <input
+          type="search"
+          id="radioSearch"
+          placeholder="Search stations, countries or genres..."
+          aria-label="Search Wazabanga Radio">
+
+        <button type="button" id="radioSearchButton">
+          Search
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="radio-visual" aria-hidden="true">
+
+      <div class="broadcast">
+
+        <div class="broadcast-ring ring-three"></div>
+        <div class="broadcast-ring ring-two"></div>
+        <div class="broadcast-ring ring-one"></div>
+
+        <div
+          class="globe-activity-layer"
+          id="globeActivityLayer"
+          aria-hidden="true">
+          <i class="globe-activity-point point-1"></i>
+          <i class="globe-activity-point point-2"></i>
+          <i class="globe-activity-point point-3"></i>
+          <i class="globe-activity-point point-4"></i>
+          <i class="globe-activity-point point-5"></i>
+          <i class="globe-activity-point point-6"></i>
+          <i class="globe-activity-point point-7"></i>
+          <i class="globe-activity-point point-8"></i>
+        </div>
+
+        <video
+          id="heroWorldGlobe"
+          class="hero-world-globe"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-hidden="true">
+          <source
+            src="/radio/assets/wazabanga-hero-globe-web-v1.mp4"
+            type="video/mp4">
+        </video>
+
+        <div class="radio-logo-orb">
+          <img
+            src="/radio/assets/wazabanga-logo-transparent-v1.png"
+            alt="">
+        </div>
+
+        <div class="wave">
+          <i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="radio-section">
+
+    <div class="section-heading">
+
+      <div>
+        <h2>Live now</h2>
+        <p>Featured stations from the Wazabanga world.</p>
+      </div>
+
+      <a class="section-link" href="#" id="viewAllStations">
+        View all
+      </a>
+
+    </div>
+
+
+    <div class="radio-library-tabs" id="radioLibraryTabs">
+
+      <button
+        class="radio-library-tab active"
+        type="button"
+        data-library="live">
+        Live Now
+      </button>
+
+      <button
+        class="radio-library-tab"
+        type="button"
+        data-library="favorites">
+        Favorites
+        <span id="favoritesCount">0</span>
+      </button>
+
+      <button
+        class="radio-library-tab"
+        type="button"
+        data-library="recent">
+        Recently Played
+      </button>
+
+    </div>
+
+    <div class="live-grid" id="stationGrid">
+
+      <article class="live-card">
+
+        <div class="live-top">
+
+          <div class="station-art">TT</div>
+
+          <div class="live-info">
+            <strong>Trinidad & Tobago</strong>
+            <span>Caribbean</span>
+          </div>
+
+        </div>
+
+        <div class="live-status">
+          <i class="live-dot"></i>
+          Live
+        </div>
+
+        <button class="card-play" aria-label="Play Trinidad radio">
+          &#9654;
+        </button>
+
+      </article>
+
+
+      <article class="live-card">
+
+        <div class="live-top">
+
+          <div class="station-art">UG</div>
+
+          <div class="live-info">
+            <strong>Uganda</strong>
+            <span>East Africa</span>
+          </div>
+
+        </div>
+
+        <div class="live-status">
+          <i class="live-dot"></i>
+          Live
+        </div>
+
+        <button class="card-play" aria-label="Play Uganda radio">
+          &#9654;
+        </button>
+
+      </article>
+
+
+      <article class="live-card">
+
+        <div class="live-top">
+
+          <div class="station-art">JM</div>
+
+          <div class="live-info">
+            <strong>Jamaica</strong>
+            <span>Caribbean</span>
+          </div>
+
+        </div>
+
+        <div class="live-status">
+          <i class="live-dot"></i>
+          Live
+        </div>
+
+        <button class="card-play" aria-label="Play Jamaica radio">
+          &#9654;
+        </button>
+
+      </article>
+
+
+      <article class="live-card">
+
+        <div class="live-top">
+
+          <div class="station-art">KE</div>
+
+          <div class="live-info">
+            <strong>Kenya</strong>
+            <span>East Africa</span>
+          </div>
+
+        </div>
+
+        <div class="live-status">
+          <i class="live-dot"></i>
+          Live
+        </div>
+
+        <button class="card-play" aria-label="Play Kenya radio">
+          &#9654;
+        </button>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <section class="radio-section">
+
+    <div class="section-heading">
+
+      <div>
+        <h2>Explore the world</h2>
+        <p>Choose a region and start discovering.</p>
+      </div>
+
+    </div>
+
+
+    <div class="region-grid">
+
+      <div class="region-card" data-region="africa">
+  <span class="region-number">01</span>
+  <strong>Africa</strong>
+  <small>Explore radio across the African continent.</small>
+</div>
+
+<div class="region-card" data-region="asia">
+  <span class="region-number">02</span>
+  <strong>Asia</strong>
+  <small>Explore radio across Asia.</small>
+</div>
+
+<div class="region-card" data-region="europe">
+  <span class="region-number">03</span>
+  <strong>Europe</strong>
+  <small>Explore radio across Europe.</small>
+</div>
+
+<div class="region-card" data-region="north-america">
+  <span class="region-number">04</span>
+  <strong>North America</strong>
+  <small>North America, Central America and the Caribbean.</small>
+</div>
+
+<div class="region-card" data-region="south-america">
+  <span class="region-number">05</span>
+  <strong>South America</strong>
+  <small>Explore radio across South America.</small>
+</div>
+
+<div class="region-card" data-region="oceania">
+  <span class="region-number">06</span>
+  <strong>Australia / Oceania</strong>
+  <small>Australia, New Zealand and the Pacific.</small>
+</div>
+
+<div class="region-card" data-region="antarctica">
+  <span class="region-number">07</span>
+  <strong>Antarctica</strong>
+  <small>Antarctic radio discovery as sources become available.</small>
+</div>
+
+<div class="region-card" data-region="worldwide">
+  <span class="region-number">08</span>
+  <strong>Worldwide</strong>
+  <small>Discover popular stations from around the world.</small>
+</div>
+
+    </div>
+
+  </section>
+
+
+  <section class="radio-section">
+
+    <div class="section-heading">
+
+      <div>
+        <h2>Find your sound</h2>
+        <p>Browse stations by genre.</p>
+      </div>
+
+    </div>
+
+
+    <div class="genre-row">
+
+      <button class="genre" data-genre="soca">Soca</button>
+      <button class="genre" data-genre="reggae">Reggae</button>
+      <button class="genre" data-genre="dancehall">Dancehall</button>
+      <button class="genre" data-genre="afrobeats">Afrobeats</button>
+      <button class="genre" data-genre="gospel">Gospel</button>
+      <button class="genre" data-genre="randb">R&B</button>
+      <button class="genre" data-genre="hip-hop">Hip Hop</button>
+      <button class="genre" data-genre="jazz">Jazz</button>
+      <button class="genre" data-genre="pop">Pop</button>
+      <button class="genre" data-genre="news">News</button>
+      <button class="genre" data-genre="talk">Talk</button>
+      <button class="genre" data-genre="sports">Sports</button>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<div class="radio-player" id="radioPlayer" style="display:none;">
+
+  <div class="player-art" id="playerArt">
+    W
+  </div>
+
+  <div class="player-copy">
+    <strong id="playerStation">Select a station</strong>
+    <span id="playerMeta">Wazabanga Radio</span>
+  </div>
+
+  <button
+    class="player-fav" id="playerFavorite"
+    type="button"
+    aria-label="Add to favorites">
+    &#9825;
+  </button>
+
+  <button
+    class="player-play" id="playerPlay"
+    type="button"
+    aria-label="Play">
+    &#9654;
+  </button>
+
+</div>
+
+
+  <script src="/radio/catalogue.js"></script>
+<script src="/radio/caribbean-catalogue.js"></script>
+<script src="/radio/east-africa-catalogue.js"></script>
+<script src="/radio/africa-catalogue.js"></script>
+<script src="/radio/asia-catalogue.js"></script>
+  <script src="/radio/globe-intelligence.js"></script>
+<script src="/radio/radio.js"></script>
+<script src="/radio/globe-dynamic.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

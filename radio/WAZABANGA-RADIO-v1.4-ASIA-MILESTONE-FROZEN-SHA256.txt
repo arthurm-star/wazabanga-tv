@@ -1,0 +1,68 @@
+WAZABANGA RADIO v1.4
+ASIA MILESTONE — FROZEN
+=======================
+
+Milestone status:
+BROWSER QA PASSED
+
+Catalogue policy:
+Milestone-quality audited catalogue.
+Isolated failed or changing streams do not block continental release.
+
+Asia:
+Countries: 21
+Stations: 2607
+HTTPS-only: YES
+Duplicate UUIDs: 0
+Duplicate streams: 0
+
+Browser smoke QA:
+PASS
+
+Known isolated browser exception observed during final smoke QA:
+Vietnam — CHẠM RADIO — not playing.
+Accepted under milestone-quality policy; does not block release.
+
+PRODUCTION / FROZEN SHA256
+--------------------------
+
+index.html
+10C662CB887E1EB789D1CEE0FFFC9089251A42B032A852F3B09445E89D473F38
+
+radio.js
+47B5C45DD89809265104FB5DAC83566BE8FE231995B072E69FA5CC4D069A224C
+
+asia-catalogue.js
+193A0918098ECDFEF786F210D96BA927F4975D9DB18F0B67FD5A2A58AC2F819B
+
+FROZEN SNAPSHOTS
+----------------
+
+index-v1.4-asia-milestone-browser-qa-passed.html
+10C662CB887E1EB789D1CEE0FFFC9089251A42B032A852F3B09445E89D473F38
+
+radio-v1.4-asia-milestone-browser-qa-passed.js
+47B5C45DD89809265104FB5DAC83566BE8FE231995B072E69FA5CC4D069A224C
+
+asia-catalogue-v1.4-milestone-browser-qa-passed.js
+193A0918098ECDFEF786F210D96BA927F4975D9DB18F0B67FD5A2A58AC2F819B
+
+ROLLBACK / AUDIT NOTES
+----------------------
+
+Original 2609-station Asia catalogue baseline:
+48B8DBA71CDD001F54D2E34AF994CA8B15FBE8F8F50DE9B6AF14E47C1883C7A9
+
+Two obsolete duplicate-service records removed before milestone:
+- Thailand — MCOT 100.5
+- Thailand — Top News
+
+Their verified working equivalents remain in the milestone catalogue.
+
+Final milestone catalogue:
+2607 stations / 21 countries.
+
+Radio hierarchy remains:
+World -> Continent -> Country -> Stations/Stream
+
+END OF WAZABANGA RADIO v1.4 ASIA MILESTONE
