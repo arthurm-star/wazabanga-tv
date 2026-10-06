@@ -1,0 +1,22 @@
+﻿WAZABANGA RADIO v1.6 - NORTH AMERICA MILESTONE
+LOCAL BROWSER QA: PASS
+
+North America verified runtime stations: 2113
+North America taxonomy countries: 20
+Verified catalogue represented countries: 19
+KN verified catalogue stations: 0
+KN browser runtime: ZIZ Radio available through existing runtime/directory layer
+
+index.html
+FB72550B86DA941DAA998D05AE03C2F4B20E2430507AECD7D2E64E4B7797B275
+
+radio.js
+1D41B4A75191B63FA9DF729EDCABD4DFFFCD01D9BD1DAEAB2B9E3C43612AC8E8
+
+north-america-catalogue.js
+9606F2F3DA95DFA8F3108B39EB0CF4A201E96ED0A2F554B3DFD31C2B781A169C
+
+Frozen snapshots:
+index-v1.6-north-america-milestone-browser-qa-passed.html
+radio-v1.6-north-america-milestone-browser-qa-passed.js
+north-america-catalogue-v1.6-north-america-milestone-browser-qa-passed.js
