@@ -1,0 +1,60 @@
+WAZABANGA RADIO v1.9 - ANTARCTICA MILESTONE
+===========================================
+
+STATUS: FROZEN
+LOCAL BROWSER QA: PASS
+
+PARENT MILESTONE
+----------------
+Wazabanga Radio v1.8 - Australia/Oceania
+Git commit:
+3037ca64aa078d239b878f6fd9eeac13fcee82df
+
+ANTARCTICA TAXONOMY
+-------------------
+Region: Antarctica
+Countries: 0
+Runtime country list: []
+Catalogue: none required
+Discovery manifest: none required
+Playback audit: none required
+Verified station count: 0
+
+EMPTY-STATE BEHAVIOUR
+---------------------
+Heading: Antarctica
+Subtitle: Radio discovery for this continent.
+Message: No radio stations are currently available for this continent.
+
+CONTINENT CARD
+--------------
+Research stations and Antarctic broadcasts as sources become available.
+
+LOCAL BROWSER QA
+----------------
+Antarctica continent card: PASS
+Antarctica empty state: PASS
+No fabricated country cards: PASS
+No fabricated station cards: PASS
+Browser back navigation: PASS
+Australia/Oceania regression: PASS
+
+PRODUCTION SHA256
+-----------------
+radio/index.html
+4DBAD370530B81495F949941AAA55786272C4346B681ACF59E15A59ED3DD8AF9
+
+radio/radio.js
+2BC9DA639CC6EC5B6C5A1A8FC0A20C29EDB639521387C04047AA22140B9F860A
+
+FROZEN SNAPSHOT SHA256
+----------------------
+radio/index-v1.9-antarctica-milestone-browser-qa-passed.html
+4DBAD370530B81495F949941AAA55786272C4346B681ACF59E15A59ED3DD8AF9
+
+NOTES
+-----
+radio.js remains unchanged from the frozen v1.8 milestone.
+No Antarctica catalogue was created.
+No discovery or FFmpeg playback audit was required.
+No countries or stations were fabricated.
