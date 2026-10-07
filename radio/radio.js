@@ -13,6 +13,117 @@ const FEATURED_COUNTRIES = [
   { code: "KE", name: "Kenya", region: "East Africa" }
 ];
 
+/*
+  WAZABANGA RADIO v2.0
+  Global verified runtime index.
+
+  Frozen regional catalogues remain immutable.
+  The outer catalogue country key is authoritative.
+*/
+function buildWazabangaGlobalStations() {
+
+  const sources = [
+    {
+      continent: "Africa",
+      catalogue:
+        typeof WAZABANGA_AFRICA_STATIONS !== "undefined"
+          ? WAZABANGA_AFRICA_STATIONS
+          : null
+    },
+    {
+      continent: "Asia",
+      catalogue:
+        typeof WAZABANGA_ASIA_STATIONS !== "undefined"
+          ? WAZABANGA_ASIA_STATIONS
+          : null
+    },
+    {
+      continent: "Europe",
+      catalogue:
+        typeof WAZABANGA_EUROPE_STATIONS !== "undefined"
+          ? WAZABANGA_EUROPE_STATIONS
+          : null
+    },
+    {
+      continent: "North America",
+      catalogue:
+        typeof WAZABANGA_NORTH_AMERICA_STATIONS !== "undefined"
+          ? WAZABANGA_NORTH_AMERICA_STATIONS
+          : null
+    },
+    {
+      continent: "South America",
+      catalogue:
+        typeof WAZABANGA_SOUTH_AMERICA_STATIONS !== "undefined"
+          ? WAZABANGA_SOUTH_AMERICA_STATIONS
+          : null
+    },
+    {
+      continent: "Oceania",
+      catalogue:
+        typeof WAZABANGA_OCEANIA_STATIONS !== "undefined"
+          ? WAZABANGA_OCEANIA_STATIONS
+          : null
+    }
+  ];
+
+  const stations = [];
+
+  for (const source of sources) {
+
+    if (
+      !source.catalogue ||
+      typeof source.catalogue !== "object"
+    ) {
+      continue;
+    }
+
+    for (
+      const [countryCode, countryStations]
+      of Object.entries(source.catalogue)
+    ) {
+
+      if (!Array.isArray(countryStations)) {
+        continue;
+      }
+
+      for (const station of countryStations) {
+
+        if (!station) {
+          continue;
+        }
+
+        stations.push({
+          ...station,
+
+          /*
+            The catalogue's outer key is the
+            authoritative country identity.
+          */
+          countrycode: countryCode,
+
+          /*
+            Preserve an embedded country name
+            where one already exists.
+          */
+          country:
+            String(station.country || "").trim(),
+
+          /*
+            Global product metadata.
+          */
+          _wazabangaContinent: source.continent
+        });
+      }
+    }
+  }
+
+  return stations;
+}
+
+const WAZABANGA_GLOBAL_STATIONS =
+  buildWazabangaGlobalStations();
+
 const searchInput = document.getElementById("radioSearch");
 const searchButton = document.getElementById("radioSearchButton");
 const stationGrid = document.getElementById("stationGrid");
@@ -1056,7 +1167,7 @@ async function searchStations() {
 
   setDiscoveryHeading(
     `Search: ${query}`,
-    "Matching radio stations from around the world."
+    "Verified Wazabanga stations first, with worldwide discovery."
   );
 
   discoveryMessage(
@@ -1065,6 +1176,125 @@ async function searchStations() {
 
   scrollToDiscovery();
 
+
+  /*
+    v2.0 verified-global search.
+
+    Search the frozen Wazabanga runtime first.
+    Radio Browser remains a secondary discovery source.
+  */
+  const searchNeedle =
+    normalized;
+
+  const normalizeSearchText =
+    value =>
+      String(value || "")
+        .toLowerCase()
+        .replace(/&/g, "and")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+
+  const verifiedMatches =
+    WAZABANGA_GLOBAL_STATIONS.filter(
+      station => {
+
+        const haystack =
+          [
+            station.name,
+            station.country,
+            station.countrycode,
+            station._wazabangaContinent,
+            station.language,
+            station.tags
+          ]
+            .map(normalizeSearchText)
+            .filter(Boolean)
+            .join(" ");
+
+        return haystack.includes(searchNeedle);
+      }
+    )
+    .map(station => ({
+      ...station,
+      _verified: true
+    }));
+
+
+  /*
+    Prefer stronger verified matches before broader
+    metadata matches.
+  */
+  verifiedMatches.sort(
+    (a,b) => {
+
+      const aName =
+        normalizeSearchText(a.name);
+
+      const bName =
+        normalizeSearchText(b.name);
+
+      const aCountry =
+        normalizeSearchText(a.country);
+
+      const bCountry =
+        normalizeSearchText(b.country);
+
+      const score =
+        station => {
+
+          const name =
+            normalizeSearchText(station.name);
+
+          const country =
+            normalizeSearchText(station.country);
+
+          const code =
+            normalizeSearchText(
+              station.countrycode
+            );
+
+          if (name === searchNeedle) {
+            return 0;
+          }
+
+          if (name.startsWith(searchNeedle)) {
+            return 1;
+          }
+
+          if (name.includes(searchNeedle)) {
+            return 2;
+          }
+
+          if (
+            country === searchNeedle ||
+            code === searchNeedle
+          ) {
+            return 3;
+          }
+
+          return 4;
+        };
+
+      const scoreDiff =
+        score(a) - score(b);
+
+      if (scoreDiff !== 0) {
+        return scoreDiff;
+      }
+
+      const nameDiff =
+        aName.localeCompare(bName);
+
+      if (nameDiff !== 0) {
+        return nameDiff;
+      }
+
+      return aCountry.localeCompare(bCountry);
+    }
+  );
+
+
+  let directoryMatches = [];
 
   try {
 
@@ -1077,66 +1307,102 @@ async function searchStations() {
         "&limit=100"
       );
 
-
-    let stations =
+    directoryMatches =
       normalizeStations(data);
-
-
-    /*
-      Remove duplicate station UUIDs.
-    */
-
-    const seen = new Set();
-
-    stations =
-      stations.filter(
-        station => {
-
-          if (
-            seen.has(
-              station.stationuuid
-            )
-          ) {
-            return false;
-          }
-
-          seen.add(
-            station.stationuuid
-          );
-
-          return true;
-        }
-      );
-
-
-    if (!stations.length) {
-
-      discoveryMessage(
-        `No working stations found for "${query}".`
-      );
-
-      return;
-    }
-
-
-    renderStations(
-      stations.slice(0,24)
-    );
-
 
   } catch (error) {
 
+    /*
+      The verified Wazabanga catalogue remains usable
+      even when the public directory is unavailable.
+    */
     console.error(
-      "Station search failed:",
+      "Supplementary station search failed:",
       error
     );
+  }
+
+
+  /*
+    Merge verified results first.
+
+    Deduplicate by UUID and stream URL while preserving
+    the original stream URL for playback.
+  */
+  const combined =
+    [
+      ...verifiedMatches,
+      ...directoryMatches
+    ];
+
+  const seenUUIDs =
+    new Set();
+
+  const seenStreams =
+    new Set();
+
+  const stations =
+    combined.filter(
+      station => {
+
+        const uuid =
+          String(
+            station.stationuuid || ""
+          )
+            .trim()
+            .toLowerCase();
+
+        const stream =
+          String(
+            station.stream ||
+            station.url_resolved ||
+            station.url ||
+            ""
+          )
+            .trim()
+            .toLowerCase();
+
+        if (
+          uuid &&
+          seenUUIDs.has(uuid)
+        ) {
+          return false;
+        }
+
+        if (
+          stream &&
+          seenStreams.has(stream)
+        ) {
+          return false;
+        }
+
+        if (uuid) {
+          seenUUIDs.add(uuid);
+        }
+
+        if (stream) {
+          seenStreams.add(stream);
+        }
+
+        return true;
+      }
+    );
+
+
+  if (!stations.length) {
 
     discoveryMessage(
-      "Search is temporarily unavailable."
+      `No working stations found for "${query}".`
     );
-  }
-}
 
+    return;
+  }
+
+
+  renderStations(
+    stations.slice(0,24)
+  );
+}
 searchButton.addEventListener(
   "click",
   searchStations
@@ -1836,99 +2102,75 @@ pushHistory = true
 
   try {
 
-    const data = await apiFetch(
-      `/json/stations/bycountrycodeexact/${encodeURIComponent(countryCode)}` +
-      "?hidebroken=true" +
-      "&order=clickcount" +
-      "&reverse=true" +
-      "&limit=100"
-    );
+    /*
+      Wazabanga v2.0 country browsing.
 
-    const directoryStations =
-      normalizeStations(data);
+      The frozen Wazabanga global runtime is authoritative.
+      Radio Browser is supplementary only.
+
+      This keeps verified country browsing available even when
+      the public directory is unavailable.
+    */
+    const normalizedCountryCode =
+      String(countryCode || "")
+        .trim()
+        .toUpperCase();
+
+    const verifiedStations =
+      WAZABANGA_GLOBAL_STATIONS
+        .filter(
+          station =>
+            String(
+              station.countrycode || ""
+            )
+              .trim()
+              .toUpperCase() ===
+            normalizedCountryCode
+        )
+        .map(
+          station => ({
+            ...station,
+            _verified: true
+          })
+        );
+
+    let directoryStations = [];
+
+    try {
+
+      const data =
+        await apiFetch(
+          `/json/stations/bycountrycodeexact/${encodeURIComponent(normalizedCountryCode)}` +
+          "?hidebroken=true" +
+          "&order=clickcount" +
+          "&reverse=true" +
+          "&limit=100"
+        );
+
+      directoryStations =
+        normalizeStations(data);
+
+    } catch (error) {
+
+      /*
+        Supplementary directory failure must not prevent
+        frozen verified Wazabanga stations from loading.
+      */
+      console.error(
+        "Supplementary country directory failed:",
+        error
+      );
+    }
 
     /*
-      Wazabanga verified stations are placed first.
-      Radio Browser supplements the catalogue.
+      Verified runtime always comes first so existing UUID/stream
+      deduplication preserves the Wazabanga copy when the directory
+      returns the same station.
     */
-    const verifiedStations =
-      (
-        typeof WAZABANGA_VERIFIED_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_VERIFIED_STATIONS[countryCode])
-      )
-        ? WAZABANGA_VERIFIED_STATIONS[countryCode]
-        : [];
-
-    const caribbeanStations =
-      (
-        typeof WAZABANGA_CARIBBEAN_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_CARIBBEAN_STATIONS[countryCode])
-      )
-        ? WAZABANGA_CARIBBEAN_STATIONS[countryCode]
-        : [];
-
-    const eastAfricaStations =
-      (
-        typeof WAZABANGA_EAST_AFRICA_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_EAST_AFRICA_STATIONS[countryCode])
-      )
-        ? WAZABANGA_EAST_AFRICA_STATIONS[countryCode]
-        : [];
-    const africaStations =
-      (
-        typeof WAZABANGA_AFRICA_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_AFRICA_STATIONS[countryCode])
-      )
-        ? WAZABANGA_AFRICA_STATIONS[countryCode]
-        : [];
-
-    const asiaStations =
-      (
-        typeof WAZABANGA_ASIA_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_ASIA_STATIONS[countryCode])
-      )
-        ? WAZABANGA_ASIA_STATIONS[countryCode]
-        : [];
-    const europeStations =
-      (
-        typeof WAZABANGA_EUROPE_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_EUROPE_STATIONS[countryCode])
-      )
-        ? WAZABANGA_EUROPE_STATIONS[countryCode].map(station => ({
-            ...station,
-            countrycode: countryCode
-          }))
-        : [];
-    const northAmericaStations =
-      (
-        typeof WAZABANGA_NORTH_AMERICA_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_NORTH_AMERICA_STATIONS[countryCode])
-      )
-        ? WAZABANGA_NORTH_AMERICA_STATIONS[countryCode].map(station => ({
-            ...station,
-            countrycode: countryCode
-          }))
-        : [];
-    const southAmericaStations =
-      (
-        typeof WAZABANGA_SOUTH_AMERICA_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_SOUTH_AMERICA_STATIONS[countryCode])
-      )
-        ? WAZABANGA_SOUTH_AMERICA_STATIONS[countryCode].map(station => ({
-            ...station,
-            countrycode: countryCode
-          }))
-        : [];
-    const oceaniaStations =
-      (
-        typeof WAZABANGA_OCEANIA_STATIONS !== "undefined" &&
-        Array.isArray(WAZABANGA_OCEANIA_STATIONS[countryCode])
-      )
-        ? WAZABANGA_OCEANIA_STATIONS[countryCode].map(station => ({
-            ...station,
-            countrycode: countryCode
-          }))
-        : [];
+    let stations = [
+      ...verifiedStations,
+      ...directoryStations
+    ];
     const WAZABANGA_QA_REJECTED_STATIONS = new Set([
   // Grenada -- failed real browser playback QA on 2026-10-04.
   "a347aba6-4247-4b97-bc4f-ba90c3d1c380",
@@ -1950,13 +2192,7 @@ function isQaRejectedStation(station) {
     WAZABANGA_QA_REJECTED_STATIONS.has(station.stationuuid)
   );
 }
-let stations = [
-  ...verifiedStations,
-  ...caribbeanStations,
-  ...eastAfricaStations,
-  ...africaStations, ...asiaStations, ...europeStations, ...northAmericaStations, ...southAmericaStations, ...oceaniaStations,
-  ...directoryStations
-];
+
 
 stations = stations.filter(station => !isQaRejectedStation(station));
 
@@ -2131,7 +2367,7 @@ async function showWorldwide(pushHistory = true) {
 
   setDiscoveryHeading(
     "Worldwide",
-    "A balanced mix of radio stations from around the world."
+    "A balanced mix of verified Wazabanga stations from around the world."
   );
 
   discoveryMessage(
@@ -2140,161 +2376,245 @@ async function showWorldwide(pushHistory = true) {
 
   scrollToDiscovery();
 
-  const worldwideCountries = [
-    { code: "NG", continent: "Africa" },
-    { code: "ZA", continent: "Africa" },
-    { code: "KE", continent: "Africa" },
-    { code: "UG", continent: "Africa" },
 
-    { code: "IN", continent: "Asia" },
-    { code: "JP", continent: "Asia" },
-    { code: "PH", continent: "Asia" },
-    { code: "AE", continent: "Asia" },
+  /*
+    WAZABANGA RADIO v2.0
+    Verified Worldwide showcase.
 
-    { code: "GB", continent: "Europe" },
-    { code: "FR", continent: "Europe" },
-    { code: "DE", continent: "Europe" },
-    { code: "IT", continent: "Europe" },
-
-    { code: "US", continent: "North America" },
-    { code: "CA", continent: "North America" },
-    { code: "TT", continent: "North America" },
-    { code: "MX", continent: "North America" },
-
-    { code: "BR", continent: "South America" },
-    { code: "AR", continent: "South America" },
-    { code: "CO", continent: "South America" },
-    { code: "CL", continent: "South America" },
-
-    { code: "AU", continent: "Oceania" },
-    { code: "NZ", continent: "Oceania" },
-    { code: "FJ", continent: "Oceania" },
-    { code: "PG", continent: "Oceania" }
+    Select globally unique stations while building
+    the six continent quotas, rather than selecting
+    first and deduplicating afterwards.
+  */
+  const worldwideContinents = [
+    "Africa",
+    "Asia",
+    "Europe",
+    "North America",
+    "South America",
+    "Oceania"
   ];
 
-  try {
+  const stationsPerContinent = 4;
 
-    const results = await Promise.all(
-      worldwideCountries.map(
-        async country => {
+  const worldwideStations = [];
 
-          try {
+  const worldwideSeenUUIDs =
+    new Set();
 
-            const station =
-              await getTopStation(country.code);
+  const worldwideSeenStreams =
+    new Set();
 
-            if (!station) {
-              return null;
-            }
 
-            if (
-              !validateCountryStation(
-                station,
-                country.code
-              )
-            ) {
+  const canUseWorldwideStation =
+    station => {
 
-              console.warn(
-                "Worldwide country mismatch:",
-                country.code,
-                station.name,
-                station.countrycode
-              );
+      if (!station) {
+        return false;
+      }
 
-              return null;
-            }
+      const uuid =
+        String(
+          station.stationuuid || ""
+        )
+          .trim()
+          .toLowerCase();
 
-            station._continent =
-              country.continent;
+      const stream =
+        String(
+          station.stream || ""
+        )
+          .trim()
+          .toLowerCase();
 
-            return station;
+      if (!uuid || !stream) {
+        return false;
+      }
 
-          } catch (error) {
+      if (
+        worldwideSeenUUIDs.has(uuid) ||
+        worldwideSeenStreams.has(stream)
+      ) {
+        return false;
+      }
 
-            console.warn(
-              "Worldwide country unavailable:",
-              country.code,
-              error
-            );
+      return true;
+    };
 
-            return null;
-          }
-        }
-      )
-    );
 
-    let stations =
-      results.filter(Boolean);
+  const addWorldwideStation =
+    (station, selected) => {
 
-    /*
-      Protect Worldwide against duplicate UUIDs
-      or duplicate canonical stream URLs.
-    */
+      if (
+        !canUseWorldwideStation(station)
+      ) {
+        return false;
+      }
 
-    const seenUuid =
-      new Set();
+      const uuid =
+        String(
+          station.stationuuid || ""
+        )
+          .trim()
+          .toLowerCase();
 
-    const seenStream =
-      new Set();
+      const stream =
+        String(
+          station.stream || ""
+        )
+          .trim()
+          .toLowerCase();
 
-    stations =
-      stations.filter(station => {
+      const verifiedStation = {
+        ...station,
+        _verified: true
+      };
 
-        const uuid =
-          String(
-            station.stationuuid || ""
-          )
-            .trim()
-            .toLowerCase();
-
-        const stream =
-          String(
-            station.url_resolved ||
-            station.url ||
-            ""
-          )
-            .trim()
-            .toLowerCase();
-
-        if (
-          (uuid && seenUuid.has(uuid)) ||
-          (stream && seenStream.has(stream))
-        ) {
-          return false;
-        }
-
-        if (uuid) {
-          seenUuid.add(uuid);
-        }
-
-        if (stream) {
-          seenStream.add(stream);
-        }
-
-        return true;
-      });
-
-    if (!stations.length) {
-
-      discoveryMessage(
-        "Worldwide radio is temporarily unavailable."
+      selected.push(
+        verifiedStation
       );
 
-      return;
+      worldwideStations.push(
+        verifiedStation
+      );
+
+      worldwideSeenUUIDs.add(uuid);
+      worldwideSeenStreams.add(stream);
+
+      return true;
+    };
+
+
+  for (const continent of worldwideContinents) {
+
+    const continentStations =
+      WAZABANGA_GLOBAL_STATIONS.filter(
+        station =>
+          station._wazabangaContinent ===
+          continent
+      );
+
+    /*
+      Group by country while preserving the frozen
+      catalogue/runtime order.
+    */
+    const byCountry =
+      new Map();
+
+    for (const station of continentStations) {
+
+      const countryCode =
+        String(
+          station.countrycode || ""
+        )
+          .trim()
+          .toUpperCase();
+
+      if (!countryCode) {
+        continue;
+      }
+
+      if (!byCountry.has(countryCode)) {
+        byCountry.set(
+          countryCode,
+          []
+        );
+      }
+
+      byCountry
+        .get(countryCode)
+        .push(station);
     }
 
-    renderStations(stations);
 
-  } catch (error) {
+    const selected = [];
 
-    console.error(error);
+
+    /*
+      Diversity pass.
+
+      Try each country in order. If that country's
+      first station collides globally, continue through
+      that country's verified stations until a unique
+      candidate is found.
+
+      At most one station is taken from each country
+      during this pass.
+    */
+    for (const countryStations of byCountry.values()) {
+
+      if (
+        selected.length >=
+        stationsPerContinent
+      ) {
+        break;
+      }
+
+      for (const station of countryStations) {
+
+        if (
+          addWorldwideStation(
+            station,
+            selected
+          )
+        ) {
+          break;
+        }
+      }
+    }
+
+
+    /*
+      Fallback pass.
+
+      Only needed when fewer than four distinct
+      populated countries can supply globally unique
+      stations. Additional unique stations from the
+      continent may then fill the quota.
+    */
+    if (
+      selected.length <
+      stationsPerContinent
+    ) {
+
+      for (const station of continentStations) {
+
+        if (
+          selected.length >=
+          stationsPerContinent
+        ) {
+          break;
+        }
+
+        addWorldwideStation(
+          station,
+          selected
+        );
+      }
+    }
+  }
+
+
+  /*
+    Selection itself now guarantees global UUID
+    and stream uniqueness. This final array is kept
+    explicit for renderer compatibility.
+  */
+  const stations =
+    worldwideStations;
+
+
+  if (!stations.length) {
 
     discoveryMessage(
       "Worldwide radio is temporarily unavailable."
     );
-  }
-}
 
+    return;
+  }
+
+
+  renderStations(stations);
+}
 
 /* BROWSER / DEVICE BACK NAVIGATION */
 
