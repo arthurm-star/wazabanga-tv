@@ -1,0 +1,426 @@
+{
+  "tool": "Wazabanga Playback Auditor",
+  "version": "2.2.0",
+  "generatedAt": "2026-10-07T11:51:42.478Z",
+  "sourceCatalogue": "C:\\Users\\Artha\\Documents\\Wazabanga\\website\\Wazabanga-Website-v2-with-v1.0.27-release (2)\\radio\\tools\\discovery\\oceania-discovery.json",
+  "totalCatalogueStations": 393,
+  "batchSize": 10,
+  "startIndex": 0,
+  "endIndex": 9,
+  "stationCount": 10,
+  "configuration": {
+    "maximumStandardAttempts": 3,
+    "browserHeaderFallback": "HTTP 401/403 only",
+    "decodeSeconds": 8,
+    "hardTimeoutMs": 15000,
+    "retryDelayMs": 1500
+  },
+  "summary": {
+    "PLAYING": 8,
+    "PLAYING_AFTER_RETRY": 0,
+    "PLAYING_WITH_HEADERS": 0,
+    "NO_OUTPUT_CONFIRMED": 0,
+    "ACCESS_RESTRICTED": 0,
+    "FAILED_CONFIRMED": 2,
+    "USABLE": 8,
+    "NOT_CONFIRMED_PLAYING": 2
+  },
+  "results": [
+    {
+      "catalogueIndex": 0,
+      "stationuuid": "31a5ca57-a995-4363-bad8-f62668331e79",
+      "name": "2AY Albury Wodonga",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://sa46.scastream.com.au/live/2ay_128.stream/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5352,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 1,
+      "stationuuid": "232d5a94-cad7-4bbd-b746-5a97bc91be69",
+      "name": "2BRW Braidwood FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://audio-edge-5bkfj.fra.h.radiomast.io/ba864be6-11d1-4e13-aa74-f8e8781f64f6",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4393,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 2,
+      "stationuuid": "0b48b42a-164b-4e00-b4a1-8366bf02ba79",
+      "name": "2CC Talking Canberra",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/2CCAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2282,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 3,
+      "stationuuid": "09eb32c0-5958-4797-92f2-1d8e8537c4e7",
+      "name": "2GB 873 Sydney",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://28093.live.streamtheworld.com/2GBAAC_O/HLS/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6278,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 4,
+      "stationuuid": "50fc26c7-b7fc-44af-bc4d-d107b7bdddfe",
+      "name": "2MCR 100.3 - Sounds of Macarthur - Macarthur Community Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://cast4.my-control-panel.com/proxy/tim1/som",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5983,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 5,
+      "stationuuid": "edcb7b39-e57b-4f44-b2d7-5a7ce96b605b",
+      "name": "2ME Gold",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://streaming.2me.com.au/2me-gold",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1845,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1772,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1776,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 6,
+      "stationuuid": "aa5dc44c-84bf-48dd-a8a3-e6821e46cc71",
+      "name": "2ME Radio Arabic",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://streaming.2me.com.au/2me",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1613,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1894,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 2072,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 7,
+      "stationuuid": "09a79bbc-fc0d-459f-98e9-b137b67a5d1a",
+      "name": "2NCR - River FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://audio-edge-d34v9.syd.o.radiomast.io/2317de18-b1e4-4472-bc63-366b1d785252?t=nightvision&cachebuster=7967348993554254",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2970,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 8,
+      "stationuuid": "78cab6a8-19cb-4916-82ec-8963d53c495e",
+      "name": "2NURFM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/2NURFM.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4196,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 9,
+      "stationuuid": "8b9ae80f-065c-44fa-a3b0-06b4baf99b4e",
+      "name": "2RRR Ryde",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/2rrrAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3731,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    }
+  ]
+}

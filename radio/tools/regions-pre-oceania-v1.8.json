@@ -1,0 +1,515 @@
+{
+    "Caribbean":  {
+                      "countries":  [
+                                        {
+                                            "code":  "TT",
+                                            "name":  "Trinidad \u0026 Tobago"
+                                        },
+                                        {
+                                            "code":  "JM",
+                                            "name":  "Jamaica"
+                                        },
+                                        {
+                                            "code":  "BB",
+                                            "name":  "Barbados"
+                                        },
+                                        {
+                                            "code":  "BS",
+                                            "name":  "Bahamas"
+                                        },
+                                        {
+                                            "code":  "GD",
+                                            "name":  "Grenada"
+                                        },
+                                        {
+                                            "code":  "LC",
+                                            "name":  "Saint Lucia"
+                                        },
+                                        {
+                                            "code":  "VC",
+                                            "name":  "Saint Vincent \u0026 the Grenadines"
+                                        },
+                                        {
+                                            "code":  "AG",
+                                            "name":  "Antigua \u0026 Barbuda"
+                                        },
+                                        {
+                                            "code":  "DM",
+                                            "name":  "Dominica"
+                                        },
+                                        {
+                                            "code":  "KN",
+                                            "name":  "Saint Kitts \u0026 Nevis"
+                                        },
+                                        {
+                                            "code":  "HT",
+                                            "name":  "Haiti"
+                                        },
+                                        {
+                                            "code":  "DO",
+                                            "name":  "Dominican Republic"
+                                        },
+                                        {
+                                            "code":  "PR",
+                                            "name":  "Puerto Rico"
+                                        },
+                                        {
+                                            "code":  "CU",
+                                            "name":  "Cuba"
+                                        }
+                                    ]
+                  },
+    "East Africa":  {
+                        "countries":  [
+                                          {
+                                              "code":  "UG",
+                                              "name":  "Uganda"
+                                          },
+                                          {
+                                              "code":  "KE",
+                                              "name":  "Kenya"
+                                          },
+                                          {
+                                              "code":  "TZ",
+                                              "name":  "Tanzania"
+                                          },
+                                          {
+                                              "code":  "RW",
+                                              "name":  "Rwanda"
+                                          },
+                                          {
+                                              "code":  "BI",
+                                              "name":  "Burundi"
+                                          },
+                                          {
+                                              "code":  "ET",
+                                              "name":  "Ethiopia"
+                                          },
+                                          {
+                                              "code":  "SS",
+                                              "name":  "South Sudan"
+                                          }
+                                      ]
+                    },
+    "Africa":  {
+                   "countries":  [
+                                     {
+                                         "code":  "NG",
+                                         "name":  "Nigeria"
+                                     },
+                                     {
+                                         "code":  "GH",
+                                         "name":  "Ghana"
+                                     },
+                                     {
+                                         "code":  "ZA",
+                                         "name":  "South Africa"
+                                     },
+                                     {
+                                         "code":  "ZM",
+                                         "name":  "Zambia"
+                                     },
+                                     {
+                                         "code":  "ZW",
+                                         "name":  "Zimbabwe"
+                                     },
+                                     {
+                                         "code":  "BW",
+                                         "name":  "Botswana"
+                                     },
+                                     {
+                                         "code":  "NA",
+                                         "name":  "Namibia"
+                                     },
+                                     {
+                                         "code":  "CM",
+                                         "name":  "Cameroon"
+                                     },
+                                     {
+                                         "code":  "SN",
+                                         "name":  "Senegal"
+                                     },
+                                     {
+                                         "code":  "CI",
+                                         "name":  "Cote d\u0027Ivoire"
+                                     },
+                                     {
+                                         "code":  "MA",
+                                         "name":  "Morocco"
+                                     },
+                                     {
+                                         "code":  "EG",
+                                         "name":  "Egypt"
+                                     }
+                                 ]
+               },
+    "Americas":  {
+                     "countries":  [
+                                       {
+                                           "code":  "US",
+                                           "name":  "United States"
+                                       },
+                                       {
+                                           "code":  "CA",
+                                           "name":  "Canada"
+                                       },
+                                       {
+                                           "code":  "MX",
+                                           "name":  "Mexico"
+                                       },
+                                       {
+                                           "code":  "BR",
+                                           "name":  "Brazil"
+                                       },
+                                       {
+                                           "code":  "AR",
+                                           "name":  "Argentina"
+                                       },
+                                       {
+                                           "code":  "CO",
+                                           "name":  "Colombia"
+                                       },
+                                       {
+                                           "code":  "CL",
+                                           "name":  "Chile"
+                                       },
+                                       {
+                                           "code":  "PE",
+                                           "name":  "Peru"
+                                       },
+                                       {
+                                           "code":  "VE",
+                                           "name":  "Venezuela"
+                                       },
+                                       {
+                                           "code":  "CR",
+                                           "name":  "Costa Rica"
+                                       },
+                                       {
+                                           "code":  "PA",
+                                           "name":  "Panama"
+                                       },
+                                       {
+                                           "code":  "GT",
+                                           "name":  "Guatemala"
+                                       }
+                                   ]
+                 },
+    "Europe":  {
+                   "countries":  [
+                                     {
+                                         "code":  "GB",
+                                         "name":  "United Kingdom"
+                                     },
+                                     {
+                                         "code":  "FR",
+                                         "name":  "France"
+                                     },
+                                     {
+                                         "code":  "DE",
+                                         "name":  "Germany"
+                                     },
+                                     {
+                                         "code":  "IT",
+                                         "name":  "Italy"
+                                     },
+                                     {
+                                         "code":  "ES",
+                                         "name":  "Spain"
+                                     },
+                                     {
+                                         "code":  "PT",
+                                         "name":  "Portugal"
+                                     },
+                                     {
+                                         "code":  "NL",
+                                         "name":  "Netherlands"
+                                     },
+                                     {
+                                         "code":  "BE",
+                                         "name":  "Belgium"
+                                     },
+                                     {
+                                         "code":  "IE",
+                                         "name":  "Ireland"
+                                     },
+                                     {
+                                         "code":  "CH",
+                                         "name":  "Switzerland"
+                                     },
+                                     {
+                                         "code":  "AT",
+                                         "name":  "Austria"
+                                     },
+                                     {
+                                         "code":  "SE",
+                                         "name":  "Sweden"
+                                     },
+                                     {
+                                         "code":  "NO",
+                                         "name":  "Norway"
+                                     },
+                                     {
+                                         "code":  "DK",
+                                         "name":  "Denmark"
+                                     },
+                                     {
+                                         "code":  "FI",
+                                         "name":  "Finland"
+                                     },
+                                     {
+                                         "code":  "PL",
+                                         "name":  "Poland"
+                                     },
+                                     {
+                                         "code":  "GR",
+                                         "name":  "Greece"
+                                     }
+                                 ]
+               },
+    "Asia":  {
+                 "countries":  [
+                                   {
+                                       "code":  "IN",
+                                       "name":  "India"
+                                   },
+                                   {
+                                       "code":  "JP",
+                                       "name":  "Japan"
+                                   },
+                                   {
+                                       "code":  "KR",
+                                       "name":  "South Korea"
+                                   },
+                                   {
+                                       "code":  "PH",
+                                       "name":  "Philippines"
+                                   },
+                                   {
+                                       "code":  "ID",
+                                       "name":  "Indonesia"
+                                   },
+                                   {
+                                       "code":  "MY",
+                                       "name":  "Malaysia"
+                                   },
+                                   {
+                                       "code":  "SG",
+                                       "name":  "Singapore"
+                                   },
+                                   {
+                                       "code":  "TH",
+                                       "name":  "Thailand"
+                                   },
+                                   {
+                                       "code":  "VN",
+                                       "name":  "Vietnam"
+                                   },
+                                   {
+                                       "code":  "PK",
+                                       "name":  "Pakistan"
+                                   },
+                                   {
+                                       "code":  "BD",
+                                       "name":  "Bangladesh"
+                                   },
+                                   {
+                                       "code":  "AE",
+                                       "name":  "United Arab Emirates"
+                                   },
+                                   {
+                                       "code":  "BH",
+                                       "name":  "Bahrain"
+                                   },
+                                   {
+                                       "code":  "IL",
+                                       "name":  "Israel"
+                                   },
+                                   {
+                                       "code":  "JO",
+                                       "name":  "Jordan"
+                                   },
+                                   {
+                                       "code":  "KW",
+                                       "name":  "Kuwait"
+                                   },
+                                   {
+                                       "code":  "LB",
+                                       "name":  "Lebanon"
+                                   },
+                                   {
+                                       "code":  "OM",
+                                       "name":  "Oman"
+                                   },
+                                   {
+                                       "code":  "QA",
+                                       "name":  "Qatar"
+                                   },
+                                   {
+                                       "code":  "SA",
+                                       "name":  "Saudi Arabia"
+                                   },
+                                   {
+                                       "code":  "TR",
+                                       "name":  "Turkey"
+                                   }
+                               ]
+             },
+    "Middle East":  {
+                        "countries":  [
+                                          {
+                                              "code":  "AE",
+                                              "name":  "United Arab Emirates"
+                                          },
+                                          {
+                                              "code":  "SA",
+                                              "name":  "Saudi Arabia"
+                                          },
+                                          {
+                                              "code":  "QA",
+                                              "name":  "Qatar"
+                                          },
+                                          {
+                                              "code":  "BH",
+                                              "name":  "Bahrain"
+                                          },
+                                          {
+                                              "code":  "KW",
+                                              "name":  "Kuwait"
+                                          },
+                                          {
+                                              "code":  "OM",
+                                              "name":  "Oman"
+                                          },
+                                          {
+                                              "code":  "JO",
+                                              "name":  "Jordan"
+                                          },
+                                          {
+                                              "code":  "LB",
+                                              "name":  "Lebanon"
+                                          },
+                                          {
+                                              "code":  "IL",
+                                              "name":  "Israel"
+                                          },
+                                          {
+                                              "code":  "TR",
+                                              "name":  "Turkey"
+                                          }
+                                      ]
+                    },
+    "North America":  {
+                          "countries":  [
+                                            {
+                                                "code":  "AG",
+                                                "name":  "Antigua \u0026 Barbuda"
+                                            },
+                                            {
+                                                "code":  "BB",
+                                                "name":  "Barbados"
+                                            },
+                                            {
+                                                "code":  "BS",
+                                                "name":  "Bahamas"
+                                            },
+                                            {
+                                                "code":  "CA",
+                                                "name":  "Canada"
+                                            },
+                                            {
+                                                "code":  "CR",
+                                                "name":  "Costa Rica"
+                                            },
+                                            {
+                                                "code":  "CU",
+                                                "name":  "Cuba"
+                                            },
+                                            {
+                                                "code":  "DM",
+                                                "name":  "Dominica"
+                                            },
+                                            {
+                                                "code":  "DO",
+                                                "name":  "Dominican Republic"
+                                            },
+                                            {
+                                                "code":  "GD",
+                                                "name":  "Grenada"
+                                            },
+                                            {
+                                                "code":  "GT",
+                                                "name":  "Guatemala"
+                                            },
+                                            {
+                                                "code":  "HT",
+                                                "name":  "Haiti"
+                                            },
+                                            {
+                                                "code":  "JM",
+                                                "name":  "Jamaica"
+                                            },
+                                            {
+                                                "code":  "KN",
+                                                "name":  "Saint Kitts \u0026 Nevis"
+                                            },
+                                            {
+                                                "code":  "LC",
+                                                "name":  "Saint Lucia"
+                                            },
+                                            {
+                                                "code":  "MX",
+                                                "name":  "Mexico"
+                                            },
+                                            {
+                                                "code":  "PA",
+                                                "name":  "Panama"
+                                            },
+                                            {
+                                                "code":  "PR",
+                                                "name":  "Puerto Rico"
+                                            },
+                                            {
+                                                "code":  "TT",
+                                                "name":  "Trinidad \u0026 Tobago"
+                                            },
+                                            {
+                                                "code":  "US",
+                                                "name":  "United States"
+                                            },
+                                            {
+                                                "code":  "VC",
+                                                "name":  "Saint Vincent \u0026 the Grenadines"
+                                            }
+                                        ]
+                      },
+    "South America":  {
+                          "name":  "South America",
+                          "countries":  [
+                                            {
+                                                "code":  "AR",
+                                                "name":  "Argentina"
+                                            },
+                                            {
+                                                "code":  "BR",
+                                                "name":  "Brazil"
+                                            },
+                                            {
+                                                "code":  "CL",
+                                                "name":  "Chile"
+                                            },
+                                            {
+                                                "code":  "CO",
+                                                "name":  "Colombia"
+                                            },
+                                            {
+                                                "code":  "PE",
+                                                "name":  "Peru"
+                                            },
+                                            {
+                                                "code":  "VE",
+                                                "name":  "Venezuela"
+                                            }
+                                        ]
+                      }
+}

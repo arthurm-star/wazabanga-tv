@@ -1,0 +1,2781 @@
+{
+  "tool": "Wazabanga Playback Auditor",
+  "version": "2.2.0",
+  "generatedAt": "2026-10-07T12:35:46.975Z",
+  "sourceCatalogue": "C:\\Users\\Artha\\Documents\\Wazabanga\\website\\Wazabanga-Website-v2-with-v1.0.27-release (2)\\radio\\tools\\discovery\\oceania-discovery.json",
+  "totalCatalogueStations": 393,
+  "batchSize": 100,
+  "startIndex": 310,
+  "endIndex": 392,
+  "stationCount": 83,
+  "configuration": {
+    "maximumStandardAttempts": 3,
+    "browserHeaderFallback": "HTTP 401/403 only",
+    "decodeSeconds": 8,
+    "hardTimeoutMs": 15000,
+    "retryDelayMs": 1500
+  },
+  "summary": {
+    "PLAYING": 80,
+    "PLAYING_AFTER_RETRY": 0,
+    "PLAYING_WITH_HEADERS": 0,
+    "NO_OUTPUT_CONFIRMED": 0,
+    "ACCESS_RESTRICTED": 1,
+    "FAILED_CONFIRMED": 2,
+    "USABLE": 80,
+    "NOT_CONFIRMED_PLAYING": 3
+  },
+  "results": [
+    {
+      "catalogueIndex": 310,
+      "stationuuid": "1bd2a096-3167-43b3-a030-69b43780577d",
+      "name": "Magic FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mediaworks.streamguys1.com/magic_net_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3209,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 311,
+      "stationuuid": "6f5ab635-8e49-43e7-b3f8-43cd44e4516e",
+      "name": "Mai FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://ais-sa1.streamon.fm/7102_128k.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 952,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 312,
+      "stationuuid": "89440784-a9c3-46b2-9474-1ed2c8baac72",
+      "name": "Mai FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mediaworks.streamguys1.com/mai_net_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2994,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 313,
+      "stationuuid": "a13f9a34-e6ca-459a-a6f1-26439858cc21",
+      "name": "Maunganui FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://radio.mmc.school.nz/listen/mmc_radio/radio.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5751,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 314,
+      "stationuuid": "3a8a8d3c-00ef-48fa-be6e-90b352c01fca",
+      "name": "Mix FM 87.9, Wellington, New Zealand",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stream.mixfm.nz/",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3943,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 315,
+      "stationuuid": "37c0ef87-6e7f-4a80-89e4-51822225a746",
+      "name": "More FM - Bay of Plenty",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mediaworks.streamguys1.com/more-tga-high_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3179,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 316,
+      "stationuuid": "0c144adf-06dd-481e-b425-be47c76cc0be",
+      "name": "More FM - Nelson",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mediaworks.streamguys1.com/more-nsn-high_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2738,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 317,
+      "stationuuid": "bb35748f-3cf8-4916-99a1-fa289b6cc7a9",
+      "name": "More FM Canterbury",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mediaworks.streamguys1.com/more-chc-high_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2881,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 318,
+      "stationuuid": "abc9ce87-7e7b-4dff-8332-fc447af5a1a0",
+      "name": "More FM Waikato",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mediaworks.streamguys1.com/more-ham-high_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2763,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 319,
+      "stationuuid": "de0f20c2-a5b9-41fd-91e0-8b419acf52da",
+      "name": "Mouthfull Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mouthfull-radio.radiocult.fm/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6656,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 320,
+      "stationuuid": "0d8da890-b6dd-4c28-acf6-a862b0902bba",
+      "name": "MPR Manawatu People's Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/MPR.stream/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2877,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 321,
+      "stationuuid": "e1011281-2179-42c2-b3bf-bbc5b4298d25",
+      "name": "Mushroom Escape",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://cast3.my-control-panel.com/proxy/jonatha1/escape?1664781783632",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5677,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 322,
+      "stationuuid": "8fcf0980-e6e2-4ab6-a815-0a655274e63f",
+      "name": "New Zealand Net Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://radio.nznetradio.net.nz/stream3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6135,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 323,
+      "stationuuid": "dbc8afb2-b62d-4e2f-8620-b81fab471288",
+      "name": "Newstalk ZB",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_01AAC.m3u8?aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=9631949606&clientType=web&companionAds=false&deviceName=web-desktop&dist=iheart&host=webapp.NZ&listenerId=&playedFrom=157&pname=live_profile&profileId=9631949606&stationid=6187&terminalId=162&territory=NZ",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4167,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 324,
+      "stationuuid": "97048e99-0fba-43f6-b3cd-99477d10bd1e",
+      "name": "Newstalk ZB",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_41AAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2833,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 325,
+      "stationuuid": "b5be29e8-1d3c-4402-823a-cf1c941f8884",
+      "name": "Niu FM - AAC",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NIUFMAAC_SC",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2176,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 326,
+      "stationuuid": "53d584e7-c657-49a1-bd66-bc2b2069ac7f",
+      "name": "Niu FM - MP3",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NIUFM_SC",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2443,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 327,
+      "stationuuid": "ff3a3778-cd32-46cc-8461-193d2d56b766",
+      "name": "OAR 105.4FM Dunedin",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/Otago.stream/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2510,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 328,
+      "stationuuid": "c6253fc0-c45b-474b-926c-4f35727004fd",
+      "name": "OAR FM - Otago Access Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/Otago.stream_aac/chunklist_w1332745084.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1894,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 329,
+      "stationuuid": "2eeef74a-0fc6-412d-a8c1-4e0386d94070",
+      "name": "One Christian Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://radio.wanderingsheep.net:33001/onechristianradio",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5429,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 330,
+      "stationuuid": "aac62510-997b-4565-b22f-85d637564a68",
+      "name": "Paekakariki 88.2FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://icecast.groundtruth.co.nz/paekakfm.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2564,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 331,
+      "stationuuid": "dffadd21-01f9-4c8a-b10d-69fe370a7874",
+      "name": "Plains FM 96.9",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/plains.stream/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2462,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 332,
+      "stationuuid": "1395ac52-7f1b-4454-b9e5-e8215e4b2ba2",
+      "name": "Planet FM 104.6 - AAC",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/PlanetFM.stream_aac/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2702,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 333,
+      "stationuuid": "344464db-120c-4605-9773-9782ddfe8842",
+      "name": "Planet FM 104.6 - MP3",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/PlanetFM.stream/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2470,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 334,
+      "stationuuid": "74cf3ba5-6899-43d2-b57d-f8cc5f73c512",
+      "name": "Positively Morrinsville 87.7FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://c16.radioboss.fm:8262/stream?1652324863134",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5181,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 335,
+      "stationuuid": "ea6f468b-9416-4128-ac7d-1c8cddb91607",
+      "name": "Radio - X",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/SAM02AAC65_SC?dist=onlineradiobox",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2008,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 336,
+      "stationuuid": "9c5ec747-98d0-4380-a1ed-33de2531b2d4",
+      "name": "Radio A",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://play.radioking.io/radio-a-music",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2939,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 337,
+      "stationuuid": "a511378d-c216-424a-ab9a-732529b2c164",
+      "name": "Radio BurgerFuel",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s3.radio.co/s9909bd65f/listen",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5221,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 338,
+      "stationuuid": "7156f7c4-1b9d-4c2b-a446-5ac5d6607f49",
+      "name": "Radio Chinese FM90.6",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s26.myradiostream.com/:20274/listen.mp3?nocache=1628504081",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2015,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 339,
+      "stationuuid": "4ce90075-d450-44eb-8503-be054b2dc5c7",
+      "name": "Radio Control 99.4FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://michae14-gecko.radioca.st/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3820,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 340,
+      "stationuuid": "fdf25d0a-1227-4cf5-9e55-b2f791f67578",
+      "name": "Radio Ferrymead 1413 AM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s2.stationplaylist.com:9440/listen.aac?1780841789005",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 718,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 878,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 657,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 341,
+      "stationuuid": "91828462-6d40-4ca4-b71a-a0d3246e65a3",
+      "name": "Radio Hauraki",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_04AAC_SC",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3676,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 342,
+      "stationuuid": "270fdac5-b50c-4775-ac3f-aa0638d1902e",
+      "name": "Radio Hauraki",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://23163.live.streamtheworld.com/NZME_04AAC/HLS/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6298,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 343,
+      "stationuuid": "b35e26d9-1962-4dd5-9c5c-e931eceff1c4",
+      "name": "Radio Hawkes Bay",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/Kidnappers.stream/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2644,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 344,
+      "stationuuid": "88de303b-77c9-4492-8a87-04923001fe13",
+      "name": "Radio Hydra",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://streaming.radio.co/sed9109681/listen",
+      "status": "ACCESS_RESTRICTED",
+      "reason": "http-access-restricted-after-browser-header-fallback",
+      "attemptsUsed": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "ACCESS_DENIED",
+          "reason": "http-access-restricted",
+          "httpStatus": 403,
+          "exitCode": 3436169992,
+          "timedOut": false,
+          "elapsedMs": 1169,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "browser-headers",
+          "status": "ACCESS_DENIED",
+          "reason": "http-access-restricted",
+          "httpStatus": 403,
+          "exitCode": 3436169992,
+          "timedOut": false,
+          "elapsedMs": 1136,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 345,
+      "stationuuid": "3c5bb36b-dc71-4fc1-b1d7-77fd78281499",
+      "name": "Radio Kidnappers",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/Kidnappers.stream_aac/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2736,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 346,
+      "stationuuid": "a75ab902-2c4e-49f7-8cf9-1a5d37397a7d",
+      "name": "Radio one 91 fm",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://play.r1.co.nz/live",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6999,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 347,
+      "stationuuid": "54316866-201d-461d-b35e-2411c36fbebc",
+      "name": "RADIO PANJABI",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s20.reliastream.com/stream/8134",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1124,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 348,
+      "stationuuid": "8d5a16cc-b77d-41e9-9257-21cb894beaba",
+      "name": "Radio Robotic",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stream.zeno.fm/rhscse2a41zuv",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1490,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 349,
+      "stationuuid": "95c328e9-49a3-46e7-ae10-2e0c54715fab",
+      "name": "Radio Robotic",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stream.zeno.fm/x4hneey2vwzuv",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1353,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 350,
+      "stationuuid": "14928631-8213-42aa-bfc1-aad43f604154",
+      "name": "Radio Sangeet Masti",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://servidor19-4.brlogic.com:7304/live?source=website",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6829,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 351,
+      "stationuuid": "e7aa06ad-2f82-4ad5-b2b9-b04b280c4f1e",
+      "name": "Radio Universo FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stationplaylist.com:7140/listen.aac",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 932,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 886,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 952,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 352,
+      "stationuuid": "35732d95-d390-4097-94c5-017385c081ca",
+      "name": "Radioactive.FM 88.6",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://radio123-gecko.radioca.st/radioactivefm",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5134,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 353,
+      "stationuuid": "26db92f7-6eb5-44f1-a5a6-8e90244e54a4",
+      "name": "Radiowave NZ",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stream.radiowavenz.com/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6019,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 354,
+      "stationuuid": "e06e1aa5-2f61-4238-ab33-3cccdd1752b9",
+      "name": "Radiowave NZ",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stream.radiowavenz.com/stream-aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5954,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 355,
+      "stationuuid": "fb02ee16-e123-40fa-88a0-355b3d38382a",
+      "name": "Radiowave NZ",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://listen.radioking.com/radio/106324/stream/145267",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1742,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 356,
+      "stationuuid": "9f252686-bb17-42ab-a87e-2718d26ebadb",
+      "name": "Radiowave NZ",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stream.radiowavenz.com/stream-aac-low",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2764,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 357,
+      "stationuuid": "6bccda6d-4c9f-4501-a3bf-0f01699282d8",
+      "name": "RAG-FM 107.7FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://cast6.asurahosting.com/proxy/ragfmcom/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2009,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 358,
+      "stationuuid": "80cf7a66-748f-4538-8de4-893e57827d8c",
+      "name": "Raglan Communtiy Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s36.myradiostream.com/20712/;?type=http&nocache=1738237956",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1584,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 359,
+      "stationuuid": "2ce0bd70-16d6-4378-85ae-52130d3a0f34",
+      "name": "RDU",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://rdu985fm-gecko.radioca.st/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3058,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 360,
+      "stationuuid": "9c69a400-cc27-4d7f-9c37-389e446b10f0",
+      "name": "Retro Hit Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://riphel02.radioca.st/;",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2659,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 361,
+      "stationuuid": "a21473af-0d70-4fce-acba-a56c5e6ea249",
+      "name": "Retro Hit Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://riphel02.radioca.st/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2459,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 362,
+      "stationuuid": "96134f5a-0601-11e8-ae97-52543be04c81",
+      "name": "Rhema - MP3",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://rhema-radio.streamguys1.com/rhema.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5021,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 363,
+      "stationuuid": "436c5b1e-5e64-4a7e-80c8-c9900a9aa65d",
+      "name": "ROVA CHILL HOP",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ROVA_CHILLHOP_S01AAC.aac?dist=?n=de33099414fdd83859df",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2364,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 364,
+      "stationuuid": "c6723382-d7b8-45e2-99ad-40a4b2b3a009",
+      "name": "Sanctuary - AAC",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://rhema-radio.streamguys1.com/rhema-sanctuary.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2163,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 365,
+      "stationuuid": "96222109-0601-11e8-ae97-52543be04c81",
+      "name": "Sanctuary - MP3",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://rhema-radio.streamguys1.com/rhema-sanctuary.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4578,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 366,
+      "stationuuid": "3da39960-20ce-4e64-88c0-3753aa8b6789",
+      "name": "SayHiFM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://play.radioking.io/sayhifm",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3995,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 367,
+      "stationuuid": "6ef99996-450b-487a-b900-cb9e7bdf8897",
+      "name": "Ski FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s2.radio.co/s6436891bc/listen",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1512,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 368,
+      "stationuuid": "a8fa8771-648a-4b70-8ee6-5994b8b2a315",
+      "name": "Sleep Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://cast4.my-control-panel.com/proxy/sleeprad/stream?1721309187745",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2075,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 369,
+      "stationuuid": "34b19004-b9c6-4204-a8b3-ef61a38077af",
+      "name": "Smooth 105.6FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://servidor26.brlogic.com:7110/live",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6033,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 370,
+      "stationuuid": "b61e2d85-286e-4510-b6af-a7549cfeb13d",
+      "name": "Sport Nation - AAC",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://sen.streamguys1.com/SENZ-AAC/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 8453,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 371,
+      "stationuuid": "270a3bee-247e-4398-b31f-9ce35f71d247",
+      "name": "Sub FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://fmsub.radioca.st/stream?type=http&nocache=140",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2002,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 372,
+      "stationuuid": "d6688b24-9013-4cf3-99ea-ab212aeaae17",
+      "name": "Tahu FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://icast1.streamcom.net/TahuFM",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4703,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 373,
+      "stationuuid": "c047eb95-f043-4b06-a20d-4e9ddbbf67d9",
+      "name": "Tautoko FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://icast1.streamcom.net/J_Tautoko.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4422,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 374,
+      "stationuuid": "74ee4b8c-1c55-4a2f-8fa6-2d6136e6fb8f",
+      "name": "The Breeze 93.4",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://mediaworks.streamguys1.com/breeze-akl-high_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2838,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 375,
+      "stationuuid": "9d17a168-6f90-41e4-a9fd-a55af86e868b",
+      "name": "The Cheese",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://station.thecheese.co.nz/hls/the_cheese/live.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5553,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 376,
+      "stationuuid": "6e96419f-0d2a-481c-a918-0b67644a71db",
+      "name": "The Cheese",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://station.thecheese.co.nz/listen/the_cheese/128.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4924,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 377,
+      "stationuuid": "5dc4b7a8-128d-4b13-b555-27973025caca",
+      "name": "The Cheese FLAC",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://station.thecheese.co.nz/listen/the_cheese/flac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 9511,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1518,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 378,
+      "stationuuid": "2e1c8d8a-605a-4b18-bfe2-751a3648713d",
+      "name": "The Edge",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://digitalstreams.mediaworks.nz/edge_net/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 8394,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 379,
+      "stationuuid": "ad37b092-f582-4841-8022-bd70b7592067",
+      "name": "The Generator",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s1.myradiostream.com/:14268/;?type=http&nocache=1608640718?0.7458407789862892",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1578,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 380,
+      "stationuuid": "5eb16e09-548b-46a1-9fba-4dc5fc998ab6",
+      "name": "The Generator FM",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s1.myradiostream.com/14268/stream/1/",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3595,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 381,
+      "stationuuid": "2fa6da4e-e494-4a5f-a29a-bf94bd77c864",
+      "name": "The Hits",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_71AAC.m3u8?aw_0_1st.playerid=iHeartRadioWebPlayer&aw_0_1st.skey=9774168307&clientType=web&companionAds=false&deviceName=web-desktop&dist=iheart&host=webapp.NZ&listenerId=&playedFrom=157&pname=live_profile&profileId=9774168307&stationid=6204&terminalId=162&territory=NZ",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6983,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 382,
+      "stationuuid": "73661f64-fd47-41a7-ab60-ecb7e3ee91d9",
+      "name": "The Platform Kiwi",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://hls.exiledkiwi.nz/theplatform.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2739,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 383,
+      "stationuuid": "73a6f6f6-871e-4d27-97ec-92ec2793f093",
+      "name": "The Platform Kiwi",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://streaming.shoutcast.com/the-platformlive",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3582,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 384,
+      "stationuuid": "f17c2043-dff0-4a74-8be1-099064ae2b81",
+      "name": "The Rock",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://digitalstreams.mediaworks.nz/rock_net/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 8249,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 385,
+      "stationuuid": "bc9ac88d-9af6-4564-9cb4-57edf4d36865",
+      "name": "The Rock - NZ's #1 rock radio station",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://digitalstreams.mediaworks.nz/rock_net_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3169,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 386,
+      "stationuuid": "55274882-6130-4c33-bb2b-72012215dca1",
+      "name": "The Sound",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://digitalstreams.mediaworks.nz/sound_net/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 7852,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 387,
+      "stationuuid": "0bf0f31b-dff2-4e42-a18e-f1b44c7c029e",
+      "name": "Tiri 2",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://servidor34-4.brlogic.com:7138/live?source=website",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6869,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 388,
+      "stationuuid": "48a88c41-f9cb-4a15-b504-97c48af247fc",
+      "name": "UP FM 107.5",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://stream.upfm.live/radio/8000/radio.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5735,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 389,
+      "stationuuid": "89d7bca7-76a0-43ce-8546-7028022b21e9",
+      "name": "Vinyl Radio NZ",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s40.myradiostream.com:17794/listen.aac?",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2409,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 390,
+      "stationuuid": "b7ba83ed-44d3-4eaa-86b1-a326bec9b338",
+      "name": "Wellington Access Radio",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://live.accessmedia.nz/Wellington.stream/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2877,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 391,
+      "stationuuid": "8f9c58ba-8526-4bdd-b145-02fabe40e635",
+      "name": "ZM Wellington (new)",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NZME_33AAC.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4216,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 392,
+      "stationuuid": "cc9c0708-d100-43cc-a76b-e1fef63d2e43",
+      "name": "新西兰中文广播电台 FM90.6 Radio Chinese",
+      "country": "New Zealand",
+      "countrycode": "NZ",
+      "stream": "https://s26.myradiostream.com:20274/listen.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2262,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    }
+  ]
+}

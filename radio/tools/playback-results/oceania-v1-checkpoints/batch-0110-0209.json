@@ -1,0 +1,3610 @@
+{
+  "tool": "Wazabanga Playback Auditor",
+  "version": "2.2.0",
+  "generatedAt": "2026-10-07T12:18:04.504Z",
+  "sourceCatalogue": "C:\\Users\\Artha\\Documents\\Wazabanga\\website\\Wazabanga-Website-v2-with-v1.0.27-release (2)\\radio\\tools\\discovery\\oceania-discovery.json",
+  "totalCatalogueStations": 393,
+  "batchSize": 100,
+  "startIndex": 110,
+  "endIndex": 209,
+  "stationCount": 100,
+  "configuration": {
+    "maximumStandardAttempts": 3,
+    "browserHeaderFallback": "HTTP 401/403 only",
+    "decodeSeconds": 8,
+    "hardTimeoutMs": 15000,
+    "retryDelayMs": 1500
+  },
+  "summary": {
+    "PLAYING": 90,
+    "PLAYING_AFTER_RETRY": 0,
+    "PLAYING_WITH_HEADERS": 0,
+    "NO_OUTPUT_CONFIRMED": 0,
+    "ACCESS_RESTRICTED": 0,
+    "FAILED_CONFIRMED": 10,
+    "USABLE": 90,
+    "NOT_CONFIRMED_PLAYING": 10
+  },
+  "results": [
+    {
+      "catalogueIndex": 110,
+      "stationuuid": "04ee8a02-e4c5-4a4b-b1b9-2cdbb9ef69d0",
+      "name": "classic 87.6 carnarvon",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.classic876.com:8000/",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3288,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 111,
+      "stationuuid": "4a17b982-4f36-46a5-ba9a-1827247466c7",
+      "name": "Club Classics",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://sa47.scastream.com.au/live/club-classics.stream/playlist.m3u8?",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5310,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 112,
+      "stationuuid": "bfbd506c-9fdc-4605-bf65-2f751aafb597",
+      "name": "CNN",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://tunein.cdnstream1.com/2868_96.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2511,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 113,
+      "stationuuid": "2cbb9bc3-79b4-46c1-9ff9-c311e1d00350",
+      "name": "Cruise 1323",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_008_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4627,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 114,
+      "stationuuid": "6911054a-d8fc-4e12-8f99-b8e9b391be10",
+      "name": "Curtin Radio - A lifetime of music",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://usa7.fastcast4u.com/proxy/curtinfm?mp=%2F1",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1681,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 115,
+      "stationuuid": "ce24066c-1f88-4d10-bd93-c2191e3572d3",
+      "name": "DooshFM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://a9.asurahosting.com:7050/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2701,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 116,
+      "stationuuid": "adbcdfba-5ed6-44dc-a0b6-9838b88927d4",
+      "name": "Double J",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://mediaserviceslive.akamaized.net/hls/live/2108567/doublejnsw/v0-221.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1564,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 117,
+      "stationuuid": "5547b37d-c1fb-40a5-af58-2f504bc0a6c9",
+      "name": "Double J QLD",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://mediaserviceslive.akamaized.net/hls/live/2038342/doublejqld/index.m3u8",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "media-failure",
+          "httpStatus": null,
+          "exitCode": 3199971767,
+          "timedOut": false,
+          "elapsedMs": 1478,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "media-failure",
+          "httpStatus": null,
+          "exitCode": 3199971767,
+          "timedOut": false,
+          "elapsedMs": 267,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "media-failure",
+          "httpStatus": null,
+          "exitCode": 3199971767,
+          "timedOut": false,
+          "elapsedMs": 239,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 118,
+      "stationuuid": "ce92a453-f6d9-44ee-9087-599ae661f21e",
+      "name": "Dubbo's 94.3",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream2.cnmns.net/dubbo943",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5897,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 119,
+      "stationuuid": "87e03293-302e-4d08-b5fa-af6c78c78d63",
+      "name": "Dump Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://radio.turbo.net.au/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2764,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 120,
+      "stationuuid": "5ff4cd6c-8053-4689-a960-678f06e8e867",
+      "name": "EMFM - Echuca Moama Community Radio - Echuca - 104.7 FM (AAC+)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://emfm-https.rezuru.com:9300/;",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2151,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 121,
+      "stationuuid": "4f9ca097-7dcf-45ae-8b57-7758181af94f",
+      "name": "Equinox Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://equinoxradio.app/stream.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1904,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 122,
+      "stationuuid": "9ce2440f-b279-4081-8226-f3ddddc80ea7",
+      "name": "FBi Radio - Sydney - 94.5 FM (MP3)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://streamer.fbiradio.com/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5890,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 123,
+      "stationuuid": "0873183a-b155-40db-9982-64547241c5d6",
+      "name": "FIFO Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.dulcet.cloud/fifo",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5592,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 124,
+      "stationuuid": "844f7218-ffdb-44a5-9034-14c3e8348c76",
+      "name": "Five Finger Death Punch",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.pcradio.ru/five_finger_death_punch-hi",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3303,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 125,
+      "stationuuid": "3f048f57-51db-4954-88b2-740c8cbcb3c5",
+      "name": "Fox 101.9",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://legacy.scahw.com.au/3fox_128",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4579,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 126,
+      "stationuuid": "a0275a47-78f2-4e2a-91a3-c6d890ff8358",
+      "name": "Fraser Coast FM 107.5 Hervey Bay",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/4FCRAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3674,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 127,
+      "stationuuid": "2f1079f1-0986-4e33-99a7-009f723726b7",
+      "name": "Free FM Rock Austral",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://freefmrock.radioca.st/",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5132,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 128,
+      "stationuuid": "54b53ad4-56f4-4579-a08f-5d7ce1160f3a",
+      "name": "Fresh 92.7",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://live.fresh927.com.au/freshaac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2875,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1368,
+            "decodedSeconds": 8.01,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 129,
+      "stationuuid": "941f7fe7-ad3b-48ef-9549-95c8ed820228",
+      "name": "Fresh 92.7",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/5FBIAAC_128.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4039,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 130,
+      "stationuuid": "33c742b0-2567-4723-a4e4-26d5ab3549db",
+      "name": "Fresh 92.7 (192kbps)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://live.fresh927.com.au/freshmp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6980,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 131,
+      "stationuuid": "4f7ee84f-4f8a-437f-8751-d16e42cd9ab2",
+      "name": "FSJ Radio - XRN Australia",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://us01.xrn.com.au/listen/fsj/FsjSd",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1637,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 132,
+      "stationuuid": "1f4d70d3-3e1e-4c84-b573-29372547cb59",
+      "name": "Gem FM 91.5MHz Bowen - Gem of the Coral Coast",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/4GEMAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3543,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 133,
+      "stationuuid": "44d3d703-f733-46e5-ad1f-75e9325b306f",
+      "name": "Gold 104.3",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_004/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4073,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 134,
+      "stationuuid": "a4c32662-98bc-42bd-b05b-dcf656272369",
+      "name": "Gold 104.3",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_004_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3917,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 135,
+      "stationuuid": "45cef58a-ef3e-471e-89e8-295eaec723d4",
+      "name": "GOLD96FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ARN_96FMAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1990,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 136,
+      "stationuuid": "10552471-1f9c-4486-b7b9-93987ddd37ad",
+      "name": "Golden Days Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://a2.asurahosting.com:6350/radio.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5318,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 137,
+      "stationuuid": "4635abdb-f830-46a2-9644-c478076af98e",
+      "name": "Good Vibes",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://sa46.scastream.com.au/live/7goodvibes_128.stream/playlist.m3u8?",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5281,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 138,
+      "stationuuid": "ead36218-e02c-4805-9c36-230f6cac067e",
+      "name": "Heavy Haulage",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://s2.stationplaylist.com:7046/listen.aac",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 861,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 899,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 742,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 139,
+      "stationuuid": "770ff078-511a-4d03-b484-0f5ca033dcf1",
+      "name": "hit Southwest",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://legacy.scahw.com.au/6bun_32",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3396,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 140,
+      "stationuuid": "8c936ad3-3571-473c-9e11-fbf03cc9e06b",
+      "name": "hit104.7 Canberra",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_005/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4745,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 141,
+      "stationuuid": "4c40d409-79a0-40d2-b198-ec44670a5eaa",
+      "name": "Hit105.3",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://hit.listnr.com/brisbane/",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 789,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "media-failure",
+          "httpStatus": null,
+          "exitCode": 3199971767,
+          "timedOut": false,
+          "elapsedMs": 742,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "media-failure",
+          "httpStatus": null,
+          "exitCode": 3199971767,
+          "timedOut": false,
+          "elapsedMs": 745,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 142,
+      "stationuuid": "e9258303-feba-48a5-b3df-a70f87f10a63",
+      "name": "Hot 91.1",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/MAR_HOT91AAC.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4797,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 143,
+      "stationuuid": "cd223735-7616-4cd4-9ed0-521c574f38c2",
+      "name": "i Heart Radio Countdown Australia",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ARN_IHRT11AAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2429,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 144,
+      "stationuuid": "0dd0846b-1089-46a4-8a05-36c1fe940328",
+      "name": "iHeart dance Australia",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ARN_IHRT7AAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3157,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 145,
+      "stationuuid": "b155ea05-864c-475d-b53c-8db16bef2ef3",
+      "name": "IMC Country Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://servidor36.brlogic.com:7050/live",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 7276,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 146,
+      "stationuuid": "05e3dfae-889b-4583-81d9-93fe1a9116b4",
+      "name": "Indian link radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://indianlink1.radioca.st/",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2387,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 147,
+      "stationuuid": "8a1e22bb-f529-45d6-900b-d56031f68bc4",
+      "name": "Indie & Alt",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://sa46.scastream.com.au/live/7indieandalternative_128.stream/playlist.m3u8?",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6265,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 148,
+      "stationuuid": "d77bedc8-378d-45aa-a690-b0d1f09e9ca1",
+      "name": "Indie Pop",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://wz0liw.scahw.com.au/live/indie-pop.stream/playlist.m3u8?",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4286,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4535,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4640,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 149,
+      "stationuuid": "a5ddc968-6a3e-4a63-9be7-37584f99ef99",
+      "name": "Island FM Whitsundays 88.0MHz Airlie Beach Central Queensland",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://onlineradiobox.com/json/au/islandwhitsundays/play?platform=web",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1836,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 150,
+      "stationuuid": "15bf8ba3-8a58-4d1c-a874-2efe8f7ee62b",
+      "name": "JOY 94.9 Out Loud Proud",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.joy.org.au/proxy/joy949?mp=/live",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3385,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 151,
+      "stationuuid": "5b7173fd-0c2d-45bd-bad5-b4e6d70ce513",
+      "name": "K Rock Geelong 95.5",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/GEE_KROCKAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2799,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 152,
+      "stationuuid": "106119af-f468-4ac6-bda6-2c1ff74da51a",
+      "name": "K-Rock 95.5",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/GEE_KROCKAAC.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4248,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 153,
+      "stationuuid": "a072699e-2726-4442-9248-f27007824ee9",
+      "name": "Katherine FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/8KTRAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3822,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 154,
+      "stationuuid": "e6a3c4ad-88d0-4180-a0fb-b2157ce82d96",
+      "name": "Kids Hits",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://wz0liw.scahw.com.au/live/kids-hits.stream/playlist.m3u8?",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4178,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4437,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4630,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 155,
+      "stationuuid": "5cceea34-4a3a-4cae-ac2b-b1f8e79a70dd",
+      "name": "KIIS 101.1",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_001_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3725,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 156,
+      "stationuuid": "ed56eecb-faf7-4e68-830a-d94fb72a5ac8",
+      "name": "KIIS 106.5",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_007_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3333,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 157,
+      "stationuuid": "0e416531-60cd-45c0-a1c0-f8c616af29bf",
+      "name": "Koori Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/2LNDAAC.aac?dist=2LNDwebsite",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2411,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 158,
+      "stationuuid": "52d81fb8-07c9-4535-9487-320bdfd240fd",
+      "name": "Krajiški Radio Dubica",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream1.srvnetplus.com:18039/",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2859,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 159,
+      "stationuuid": "76322caa-f59d-4d43-8c49-c63e688c1b9a",
+      "name": "Lainchan Radio Main",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://radio.lainchan.org/listen/lainchan_radio_main/radio.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5286,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 160,
+      "stationuuid": "7a24c0fa-0935-4e1c-8f00-29ee733b05d3",
+      "name": "Led Zeppelin",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://streaming.exclusive.radio/er-app/ledzeppelin/icecast.audio",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 983,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 161,
+      "stationuuid": "320e5dfa-c064-4f3e-a99c-730f669210a0",
+      "name": "LiSTNR - Aussie Dance",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://wz0liw.scahw.com.au/live/aussiedance_128.stream/playlist.m3u8",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4547,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4734,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4534,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 162,
+      "stationuuid": "c515129c-3c44-4ffa-b407-ff3158468368",
+      "name": "LiSTNR - Drum & Bass",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://wz0liw.scahw.com.au/live/drumnbass_128.stream/playlist.m3u8",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4505,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4229,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4529,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 163,
+      "stationuuid": "f922c783-7509-4461-83ec-4f197b588b47",
+      "name": "LiSTNR - Party",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://wz0liw.scahw.com.au/live/party_128.stream/playlist.m3u8",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4606,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4226,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 4752,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 164,
+      "stationuuid": "beee2145-f676-4ff5-96ea-36522121d6a4",
+      "name": "Lofty Community Media",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream01.sigile.net/lofty-48-aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1142,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 165,
+      "stationuuid": "e62a225a-c076-4d7c-97fc-c0011a08c568",
+      "name": "Magic 87.6",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://syd02.sdn.dhcmedia.com.au/radio/8010/magic876",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1526,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1148,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "network-failure",
+          "httpStatus": null,
+          "exitCode": 4294967291,
+          "timedOut": false,
+          "elapsedMs": 1046,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 166,
+      "stationuuid": "861feade-71a6-441d-8620-455319ce6df6",
+      "name": "Magic 105.9",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AUG_MAGIC1059.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2584,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 167,
+      "stationuuid": "fad86427-31a9-4d89-a4af-837d9bb1a57a",
+      "name": "Massive Chill Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://puma.streemlion.com:3950/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6180,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 168,
+      "stationuuid": "adad3aba-660f-44bf-8579-208722c3980d",
+      "name": "MBS Light - Brisbane",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.4mbs.com.au/mbslight",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2793,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 169,
+      "stationuuid": "89885017-3c53-46e3-af16-2a192ce61664",
+      "name": "MIBL Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://www.miblradio.com.au/mibl",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5979,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 170,
+      "stationuuid": "90d91f17-5c1c-4189-a218-e7a0cfff4732",
+      "name": "MIBL Radio — Instrumental",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://www.miblradio.com.au/mibl2",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5421,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 171,
+      "stationuuid": "c81dd00d-4972-48f8-b346-c35747b6fbde",
+      "name": "Mix 94.5",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://sa46.scastream.com.au/live/6mix_128.stream/playlist.m3u8?listeningSessionID=692f1dcf00977a0f_17156967_Q3O0YAv4_MTAzLjIxLjgxLjY6ODA!_000000q9IbS&downloadSessionID=0",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4588,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 172,
+      "stationuuid": "1ab478cb-0343-4134-99d9-e51d58531eaa",
+      "name": "Mix 102.3",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_003_icy",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4608,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 173,
+      "stationuuid": "38cb9b9e-97f9-4a72-a517-d363d96348a1",
+      "name": "Mix 106.3 Canberra",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_006/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4361,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 174,
+      "stationuuid": "b85f1a0a-035e-4724-8b18-805e8dbcd13b",
+      "name": "MyFM Perth",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://halo.streamerr.co/listen/myfmperth/radio.mp3",
+      "status": "FAILED_CONFIRMED",
+      "reason": "failed-after-retries",
+      "attemptsUsed": 3,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 1456,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 2,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 1368,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        },
+        {
+          "attempt": 3,
+          "mode": "standard",
+          "status": "FAILED",
+          "reason": "http-source-not-found",
+          "httpStatus": 404,
+          "exitCode": 3419392776,
+          "timedOut": false,
+          "elapsedMs": 1461,
+          "evidence": {
+            "inputAudio": false,
+            "outputAudio": false,
+            "decodedAudioKiB": null,
+            "decodedSeconds": null,
+            "decodedBytesEvidence": false,
+            "decodedTimeEvidence": false
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 175,
+      "stationuuid": "57971254-dfe8-475e-bf06-ce3b1d48a764",
+      "name": "Newy 87.8 FM - Newcastle - 87.8 FM (MP3)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://radio.newy.com.au:8888/radio",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6153,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 176,
+      "stationuuid": "63dc20d1-47f3-43c4-bac6-25fb474ca71d",
+      "name": "NIGE!",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://ais-arn.streamguys1.com/au_030/playlist.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5162,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 177,
+      "stationuuid": "c231b693-d82c-4c05-9d93-a1349aee540c",
+      "name": "Nightride FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.nightride.fm/nightride.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1733,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 178,
+      "stationuuid": "241e1e0d-dbd0-4797-9fb9-ed3b391ac60a",
+      "name": "Nightride FM Chillsynth",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.nightride.fm/chillsynth.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1669,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 179,
+      "stationuuid": "9e831aa4-192f-4e32-b1d0-fef1fd490de9",
+      "name": "Nightride FM Datawave",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.nightride.fm/datawave.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2657,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 180,
+      "stationuuid": "fd07d9ed-1dfa-4de5-8ec0-c2431032cd8d",
+      "name": "Noongar Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://firstnationsmedia.stream/8028/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2277,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 181,
+      "stationuuid": "b4144354-74ee-4f0f-85ae-fcdd8773c278",
+      "name": "Northside Radio 99.3",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/2NSBAAC.aac?_=1",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3932,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 182,
+      "stationuuid": "4f5d2b6c-6664-49e4-8e83-793d69adb3bc",
+      "name": "Nova 91.9",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_919_AAC48.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3901,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 183,
+      "stationuuid": "6a54a68c-5853-41f7-96de-71f75993e40e",
+      "name": "OnAir IM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://sydney.onair.im/listen/im_radio_sydney/radio.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4467,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 184,
+      "stationuuid": "abf0d086-aeaa-4c06-9196-bc9a0721b8b8",
+      "name": "PBS 106.7FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/3PBS_FMAACHIGH.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4120,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 185,
+      "stationuuid": "2c7a8ddb-8f0d-48e3-9f08-895e34d2306a",
+      "name": "PBS FM - Melbourne - 106.7 FM (48kHz, 192kbps AAC-LC)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/3PBS_FMAACHIGH.m3u8",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4796,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 186,
+      "stationuuid": "0f5d89f0-66fa-40ce-b939-9f29f61fc505",
+      "name": "Perth Fire and Rescue Service Command",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.warsug.info/WARSUG",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3667,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 345,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 187,
+      "stationuuid": "84337bb8-5e57-4698-a349-1b7e7319a06a",
+      "name": "Portuguese Radio Australia",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://s2.radio.co/sdff54b89f/listen",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5569,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 188,
+      "stationuuid": "0be91690-3dbb-440f-a4e3-1e592a346299",
+      "name": "Power FM Bega Bay",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/BEG_POWER_FMAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 7176,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 189,
+      "stationuuid": "d1262f5e-7f24-4190-8865-fd1fafb2bed4",
+      "name": "Power100 100.7MHz FM Townsville QLD First in Local News and Music 20220701",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/TOW_POWER100AAC_SC",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3062,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 190,
+      "stationuuid": "ad32c4dc-9cfd-4f8d-bc44-e5ce512d117f",
+      "name": "QFM by Queye (MP3)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.zeno.fm/wnbq9apyv14tv?an-uid=1741603114512061909&mm-uid=98c2665f-f368-4900-93b0-d427fd9777ee&dot-uid=0a98220400a951786d9e8802&triton-uid=cookie%3Aae35d476-584e-465b-ac85-898cc5e036d9&amb-uid=9042076293310527344&dbm-uid=CAESEEUSELk1rmCmdnxbYmAsIc4&cto-uid=9a8cd501-adcf-4a08-a60c-38259241445a-665ff379-5553&bsw-uid=49b8ee44-922b-41f4-96f4-02120aa6b5cd&dyn-uid=6107108616908101367&ttd-uid=3ec03d28-b1e8-4c90-ae88-97e66a9a7a11",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1473,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 191,
+      "stationuuid": "99aad9fe-dae6-490c-8d57-047742631915",
+      "name": "QUIVR",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://s2.radio.co/s7348c2995/listen",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 7066,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 192,
+      "stationuuid": "1d09551e-9a53-43a7-b606-cc8bee0be102",
+      "name": "Radio 432hz",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://play.radioking.io/radio432/849906",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2780,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 193,
+      "stationuuid": "1032ac41-b841-4a7c-a28f-36f94d1d2a20",
+      "name": "Radio Blue Mountains",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/2BLU.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4105,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 194,
+      "stationuuid": "1b2cf487-8d8c-423a-9516-3940ffb9aeff",
+      "name": "Radio ENA",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://c3.radioboss.fm:8238/320",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 4286,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 195,
+      "stationuuid": "67c25698-8107-4f01-a486-c240260a07c0",
+      "name": "Radio Italiana 531",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOITALIANA.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2623,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 196,
+      "stationuuid": "f6905d74-1288-4f2e-9b3d-d0268ab5e5bc",
+      "name": "Radio Mansfield 99.7FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://c7.radioboss.fm:18291/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5121,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 197,
+      "stationuuid": "71a8ea7b-860a-40b9-85cb-e9efcd8b4ca0",
+      "name": "Radio Trainwreck Live",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://stream.radiotrainwreck.live/live",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 6673,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 198,
+      "stationuuid": "4bbab618-32ac-4a2c-b48a-1b75663c648a",
+      "name": "Rebel 99.4 Gold Coast",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://s8.yesstreaming.net:17099/RblGC",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 969,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 199,
+      "stationuuid": "71aace07-f607-4451-a7d1-435d787616e2",
+      "name": "Rebel FM - Gold Coast - 99.4 FM (AAC) [HQ]",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://s8.yesstreaming.net:17145/RblGC_hq",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5355,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 200,
+      "stationuuid": "608f9c47-619f-4de6-a8a8-ec6771fc1c63",
+      "name": "Rebel FM - Karumba - 98.1 FM (AAC)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://s8.yesstreaming.net:17099/RblCNQ",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 864,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 201,
+      "stationuuid": "99d1d137-0f4a-49cb-906b-96988d57f9d6",
+      "name": "Rebel FM - Miles - 94.5 FM (AAC)",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://s8.yesstreaming.net:17099/RblDD",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 752,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 202,
+      "stationuuid": "35d1ec37-e8c2-439d-ad82-e84174fc725e",
+      "name": "Rim FM 100.1",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://streaming.rimfm.org/rimfmlive.mp3",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5403,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 203,
+      "stationuuid": "1fa14a4d-58e3-446e-a2f0-1906353be095",
+      "name": "ROQ FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://cast4.asurahosting.com/proxy/exaltmed/stream",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 5088,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 204,
+      "stationuuid": "35c358b6-c913-418a-9db9-71b9734933f7",
+      "name": "Rose City FM",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/4SDBAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3936,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 205,
+      "stationuuid": "9d7ca053-1f8d-4d64-b5a8-91372e5529c8",
+      "name": "RTRFM 92.1",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://live.rtrfm.com.au/stream1",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 2949,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 206,
+      "stationuuid": "7078d270-62b8-49c3-a729-ad325d60d29c",
+      "name": "SBS PopAsia",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://sbs-ice.streamguys1.com/sbs-popasia-sbs-web",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3608,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1500,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 207,
+      "stationuuid": "e4806048-d722-4f7e-8482-75792f5e8f4e",
+      "name": "Shack Radio Gippsland",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://usa19.fastcast4u.com/theshack",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1282,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 208,
+      "stationuuid": "1653b791-7005-4e95-be20-4e7b626a4a20",
+      "name": "Sky News Australia Radio",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_SKYNEWSAAC.aac",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 3987,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "catalogueIndex": 209,
+      "stationuuid": "7cd7f8f9-e337-44e8-8091-6f5c05ec16be",
+      "name": "Smooth Chill - Music to chill to",
+      "country": "Australia",
+      "countrycode": "AU",
+      "stream": "https://media-ssl.musicradio.com/SmoothChill",
+      "status": "PLAYING",
+      "reason": "decoded-audio-confirmed",
+      "attemptsUsed": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "mode": "standard",
+          "status": "PLAYING",
+          "reason": "decoded-audio-confirmed",
+          "httpStatus": null,
+          "exitCode": 0,
+          "timedOut": false,
+          "elapsedMs": 1565,
+          "evidence": {
+            "inputAudio": true,
+            "outputAudio": true,
+            "decodedAudioKiB": 1378,
+            "decodedSeconds": 8,
+            "decodedBytesEvidence": true,
+            "decodedTimeEvidence": true
+          },
+          "error": null
+        }
+      ]
+    }
+  ]
+}
